@@ -17,3 +17,8 @@ promise
 rsa
 ecdsa
 pyOpenSSL
+
+Flask
+Flask-APScheduler
+Flask-SQLAlchemy
+
