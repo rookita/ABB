@@ -1,0 +1,22 @@
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    {% block css %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+    {% block js %}  {% endblock %}
+    </head>
+    <body>
+                    
+    <ul>
+    <li><a class="activate" href="/"><b>首页</b></a></li>
+    <li><a href="/auction/create">创建拍卖</a></li>
+    <li><a href="/auction/view">参加拍卖</a></li>
+    <li><a href="/user/info">个人信息</a></li>
+    <li><a href="/user/logout">退出登录</a></li>      
+    </ul>      
+    
+    {% block body %}{% endblock %}
+    
+    </body>
+</html>

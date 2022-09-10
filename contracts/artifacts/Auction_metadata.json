@@ -1,0 +1,469 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "Auction_created",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "winner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"name": "Auction_end",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "Recieved_deposit",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "nonce",
+								"type": "string"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "Hash",
+								"type": "bytes32"
+							}
+						],
+						"internalType": "struct Auction.Sealed_Bid",
+						"name": "sealed_bid",
+						"type": "tuple"
+					}
+				],
+				"name": "commit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "compute_winner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_item",
+						"type": "string"
+					}
+				],
+				"name": "create_auction",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNow",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "s",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "bid",
+						"type": "uint256"
+					}
+				],
+				"name": "hash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "queryAllBidders",
+				"outputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "address",
+										"name": "addr",
+										"type": "address"
+									}
+								],
+								"internalType": "struct Auction.User",
+								"name": "basic_info",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "nonce",
+										"type": "string"
+									},
+									{
+										"internalType": "bytes32",
+										"name": "Hash",
+										"type": "bytes32"
+									}
+								],
+								"internalType": "struct Auction.Sealed_Bid",
+								"name": "sealed_bid",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "tbid",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct Auction.True_Bid",
+								"name": "true_bid",
+								"type": "tuple"
+							},
+							{
+								"internalType": "bool",
+								"name": "reveal_error",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Auction.Bidder[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "queryBalanceOfContract",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "queryBidderByaddr",
+				"outputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "address",
+										"name": "addr",
+										"type": "address"
+									}
+								],
+								"internalType": "struct Auction.User",
+								"name": "basic_info",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "nonce",
+										"type": "string"
+									},
+									{
+										"internalType": "bytes32",
+										"name": "Hash",
+										"type": "bytes32"
+									}
+								],
+								"internalType": "struct Auction.Sealed_Bid",
+								"name": "sealed_bid",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "tbid",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct Auction.True_Bid",
+								"name": "true_bid",
+								"type": "tuple"
+							},
+							{
+								"internalType": "bool",
+								"name": "reveal_error",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Auction.Bidder",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "queryContractBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "queryItem",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "queryResult",
+				"outputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "address",
+										"name": "addr",
+										"type": "address"
+									}
+								],
+								"internalType": "struct Auction.User",
+								"name": "basic_info",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "nonce",
+										"type": "string"
+									},
+									{
+										"internalType": "bytes32",
+										"name": "Hash",
+										"type": "bytes32"
+									}
+								],
+								"internalType": "struct Auction.Sealed_Bid",
+								"name": "sealed_bid",
+								"type": "tuple"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "tbid",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct Auction.True_Bid",
+								"name": "true_bid",
+								"type": "tuple"
+							},
+							{
+								"internalType": "bool",
+								"name": "reveal_error",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Auction.Bidder",
+						"name": "",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "querySeller",
+				"outputs": [
+					{
+						"components": [
+							{
+								"components": [
+									{
+										"internalType": "address",
+										"name": "addr",
+										"type": "address"
+									}
+								],
+								"internalType": "struct Auction.User",
+								"name": "basic_info",
+								"type": "tuple"
+							},
+							{
+								"internalType": "uint256",
+								"name": "start_reveal_time",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "DDL",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Auction.Seller",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "tbid",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Auction.True_Bid",
+						"name": "true_bid",
+						"type": "tuple"
+					}
+				],
+				"name": "reveal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Auction.sol": "Auction"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Auction.sol": {
+			"keccak256": "0x008964bce225d00c65710d69a18e10c2a909c24625b912fe321961e3b6135823",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://f475ae3b85355f5d56a429c876e2d75d894caaf96fae5e21f3cb55b6d49475c2",
+				"dweb:/ipfs/Qmezy4rFV2EPdX557vDBBEt6Pj8wAeALX8FsocG2WpVQNh"
+			]
+		}
+	},
+	"version": 1
+}

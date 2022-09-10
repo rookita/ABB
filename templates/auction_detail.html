@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/static/css/login.css">
+<style type="text/css">
+
+.text-input{
+margin:0 0 10 0; 
+outline-style: none ;
+border: 1px solid #ccc; 
+border-radius: 3px;
+padding: 13px 14px;
+width: 200px;
+font-size: 14px;
+font-weight: 700;
+font-family: "Microsoft soft";
+}
+
+.key{
+    background-color:#E2A9F3;
+    display:inline-block;
+    width:200px;
+}
+
+.value{
+    background-color:#D8D8D8;
+    display:inline-block;
+    width:400px;
+}
+
+p{
+    margin-bottom:20px;
+}
+
+.div1{
+    margin-left:100px;
+    margin-top:40px;
+}
+
+.div2{
+    margin-left:200px;
+    margin-top:40px;
+}
+
+.button{
+    margin-top:10px;
+    width: 270px; /* 宽度 */
+	height: 40px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background: #1E90FF; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 17px; /* 字体大小 */
+
+}
+</style>
+{% endblock %}
+{% block title %}Auction Details {% endblock %}
+{%block js%}
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.0/jquery.js" type="text/javascript"></script>
+<script src="/static/js/detail.js" type="text/javascript"></script>
+{% endblock %}
+
+{%block body%}
+    <div class="div1">
+    <p><span class = "key">id</span>: <span class="value">{{Auction.aid}}</sapn></p>
+    <p><span class = "key">item</span>: <span class="value">{{Auction.item}}</sapn></p>
+    <p><span class = "key">seller</span>: <span class="value">{{Auction.seller}}</sapn></p>
+    <p><span class = "key">state</span>: <span class="value">{{Auction.state}}</sapn></p>
+    <p><span class = "key">end_commit_time</span>: <span class="value">{{Auction.start_reveal_time}}</sapn></p>
+    <p><span class = "key">get_winner_time</span>: <span class="value">{{Auction.DDL}}</sapn></p>
+    <p><span class = "key">winner</span>: <span class="value">{{Auction.winner}}</sapn></p>
+    <p><span class = "key">price</span>: <span class="value">{{Auction.price}}</sapn></p>
+    <p><span class = "key">address</span>: <span class="value">{{Auction.addr}}</sapn></p>
+    </div>
+    {% if Auction.state == "commit" %}
+        {% if buyer %}
+            {% if is_commited %}
+                You already commited! <br>
+            {% else %}
+            <div class = "div2">
+                <form action="/auction/participate" method="post">
+                    <input type='text' class='text-input' name='bid' id='bid' placeholder='bid' required> <br>
+                    <input type='text' class='text-input' name='nonce' id='nonce' placeholder='nonce'required> <br>
+                <p><input type="password" name="password" placeholder="password" class="text-input" id="password" required><span></span></p>
+                    <input type='hidden' value={{Auction.addr}} name='addr' id="addr">
+                    <input class= 'button' type='button' value='submit' id='submit'>
+                </form>
+            </div1>
+            {% endif %}
+        {% endif %}
+            
+        {% if seller %}
+        COMMIT <br>
+        {% endif %}
+    {% endif %}
+    
+    {% if Auction.state == "reveal" %}
+        REVEAL <br>
+    {% endif %}
+
+    {% if Auction.state == "end" %}
+        <div class = "div1">ENDED<div>
+    {% endif %}
+{% endblock %}

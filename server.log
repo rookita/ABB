@@ -1,0 +1,965 @@
+[2022-07-11 16:32:05,147] INFO in blockchain: call contract Auction at 0x42883e01ac97a3a5ef8a70c290abe0f67913964e. queryItem1 (None) -> (('watch',),)
+[2022-07-11 18:39:32,860] INFO in blockchain: call contract Auction at 0x42883e01ac97a3a5ef8a70c290abe0f67913964e. queryItem1 (None) -> (('watch',),)
+[2022-07-11 18:55:27,603] INFO in blockchain: deploy contract Auction at 0x8d0b07676344836078cef2b3328637c265d6c9d6
+[2022-07-11 19:08:10,770] INFO in blockchain: deploy contract Auction at 0x0e8d9eefc4daa8d406a8c037ed7e1feee99c8a8c
+[2022-07-11 19:08:27,603] INFO in blockchain: deploy contract Auction at 0xd47ee6ad57dfc2535e511f363fc259357ee6e148
+[2022-07-11 20:08:12,142] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. queryItem (None) -> ('item for sell',)
+[2022-07-11 20:08:12,391] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. querySeller (None) -> ((('0', '0x95198b93705e394a916579e048c8a32ddfb900f7'), 0, 0, 0, 0),)
+[2022-07-11 20:18:45,066] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. queryAllBidders (None) -> (((('1', '0x7bffdf9c7f335e3d69b19fdc1f857746e58d68cc'), (100,), (0,), False), (('A', '0x0cc0c154eb05e793faa2d2d43b5458a0bbe21a54'), (100,), (0,), False)),)
+[2022-07-11 20:28:19,548] WARNING in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. commit (['B', [200]]) error:RevertInstruction
+[2022-07-11 20:28:19,548] WARNING in blockchain: receipt: {'blockHash': '0xc5281fc0d79e870c3a8b4c53e611c20320d91aec1af2e22a2a26ad24f5018bd6', 'blockNumber': '0x1a', 'contractAddress': '0x0000000000000000000000000000000000000000', 'from': '0x4d62824c11c131b24060e147cd42dcd2ce55ba47', 'gasUsed': '0x5f97', 'input': '0xcec5e440000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000c800000000000000000000000000000000000000000000000000000000000000014200000000000000000000000000000000000000000000000000000000000000', 'logs': [], 'logsBloom': '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000', 'output': '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d636f6d6d6974206572726f722100000000000000000000000000000000000000', 'remainGas': '0x0', 'root': '0x0000000000000000000000000000000000000000000000000000000000000000', 'status': '0x16', 'statusMsg': 'RevertInstruction', 'to': '0x83592a3cf1af302612756b8687c8dc7935c0ad1d', 'transactionHash': '0x520c122c38b2eb2db4e14b2b837aee1387f2c3333eb4686933ff33deba5c9956', 'transactionIndex': '0x0'}
+[2022-07-11 20:28:46,476] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. commit (['C', [300]]) -> error
+[2022-07-11 20:28:47,012] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. commit (['D', [400]]) -> error
+[2022-07-11 20:28:47,563] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. reveal (['A', [100]]) -> error
+[2022-07-11 20:28:48,093] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. reveal (['B', [200]]) -> error
+[2022-07-11 20:28:48,615] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. reveal (['C', [300]]) -> error
+[2022-07-11 20:28:49,148] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. reveal (['D', [600]]) -> error
+[2022-07-11 20:29:43,365] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. queryAllBidders (None) -> (((('1', '0x7bffdf9c7f335e3d69b19fdc1f857746e58d68cc'), (100,), (0,), False), (('A', '0x0cc0c154eb05e793faa2d2d43b5458a0bbe21a54'), (100,), (0,), False), (('B', '0x4d62824c11c131b24060e147cd42dcd2ce55ba47'), (200,), (0,), False), (('C', '0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6'), (300,), (0,), False), (('D', '0x27af5971dbae6f37b4bab066fc01b580ead82bdc'), (400,), (0,), False)),)
+[2022-07-11 20:30:55,653] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. reveal (['A', [100]]) -> error
+[2022-07-11 20:30:56,223] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. reveal (['B', [200]]) -> error
+[2022-07-11 20:30:56,741] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. reveal (['C', [300]]) -> error
+[2022-07-11 20:30:57,266] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. reveal (['D', [600]]) -> error
+[2022-07-11 20:30:57,352] INFO in blockchain: call contract Auction at 0x83592a3cf1af302612756b8687c8dc7935c0ad1d. queryAllBidders (None) -> (((('1', '0x7bffdf9c7f335e3d69b19fdc1f857746e58d68cc'), (100,), (0,), False), (('A', '0x0cc0c154eb05e793faa2d2d43b5458a0bbe21a54'), (100,), (0,), False), (('B', '0x4d62824c11c131b24060e147cd42dcd2ce55ba47'), (200,), (0,), False), (('C', '0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6'), (300,), (0,), False), (('D', '0x27af5971dbae6f37b4bab066fc01b580ead82bdc'), (400,), (0,), False)),)
+[2022-07-11 20:40:21,511] WARNING in blockchain: clean databases
+[2022-07-11 20:40:21,563] WARNING in blockchain: compile all contracts
+[2022-07-11 23:22:34,503] WARNING in blockchain: clean databases
+[2022-07-11 23:22:34,559] WARNING in blockchain: compile all contracts
+[2022-07-11 23:23:36,695] WARNING in blockchain: clean databases
+[2022-07-11 23:23:36,747] WARNING in blockchain: compile all contracts
+[2022-07-11 23:26:43,668] INFO in blockchain: deploy contract Auction at 0x01797e8c7b9db4c7ade9821b791a5ec61e83fb01
+[2022-07-11 23:28:09,854] INFO in blockchain: deploy contract Auction at 0x99455b752eac5e5ad26c66cea324a7072ace78fc
+[2022-07-11 23:28:33,366] INFO in blockchain: deploy contract Auction at 0x0a3545be185451b1b49a9bb537963eba0822589a
+[2022-07-11 23:28:34,096] INFO in blockchain: call contract Auction at 0x0a3545be185451b1b49a9bb537963eba0822589a. create_auction (['item for test']) -> ()
+[2022-07-11 23:31:35,638] WARNING in blockchain: call contract Auction at 0x0a3545be185451b1b49a9bb537963eba0822589a. commit ([[100]]) error:RevertInstruction
+[2022-07-11 23:31:35,638] WARNING in blockchain: receipt: {'blockHash': '0x9ab878bd53c16613370299be2ce24af681b80434e4d723dba148e2b3ae85578c', 'blockNumber': '0x29', 'contractAddress': '0x0000000000000000000000000000000000000000', 'from': '0x0cc0c154eb05e793faa2d2d43b5458a0bbe21a54', 'gasUsed': '0x5910', 'input': '0xa86f0ccd0000000000000000000000000000000000000000000000000000000000000064', 'logs': [], 'logsBloom': '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000', 'output': '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d636f6d6d6974206572726f722100000000000000000000000000000000000000', 'remainGas': '0x0', 'root': '0x0000000000000000000000000000000000000000000000000000000000000000', 'status': '0x16', 'statusMsg': 'RevertInstruction', 'to': '0x0a3545be185451b1b49a9bb537963eba0822589a', 'transactionHash': '0xe9c6773c7badbb2c82a45efad15d79708b98520670cc7bf4fdfa690afa383dcc', 'transactionIndex': '0x0'}
+[2022-07-11 23:32:15,654] INFO in blockchain: call contract Auction at 0x0a3545be185451b1b49a9bb537963eba0822589a. commit ([[200]]) -> error
+[2022-07-11 23:32:16,190] INFO in blockchain: call contract Auction at 0x0a3545be185451b1b49a9bb537963eba0822589a. commit ([[300]]) -> error
+[2022-07-11 23:32:16,724] INFO in blockchain: call contract Auction at 0x0a3545be185451b1b49a9bb537963eba0822589a. commit ([[400]]) -> error
+[2022-07-11 23:32:17,041] WARNING in blockchain: call contract Auction at 0x0a3545be185451b1b49a9bb537963eba0822589a. reveal ([[100]]) error:RevertInstruction
+[2022-07-11 23:32:17,042] WARNING in blockchain: receipt: {'blockHash': '0xc2e5a5020be72e9cd79a1ba121770ef29e6f727ade9063e76482d069a83d125b', 'blockNumber': '0x2d', 'contractAddress': '0x0000000000000000000000000000000000000000', 'from': '0x0cc0c154eb05e793faa2d2d43b5458a0bbe21a54', 'gasUsed': '0x593e', 'input': '0xcafeea970000000000000000000000000000000000000000000000000000000000000064', 'logs': [], 'logsBloom': '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000', 'output': '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d72657665616c206572726f722100000000000000000000000000000000000000', 'remainGas': '0x0', 'root': '0x0000000000000000000000000000000000000000000000000000000000000000', 'status': '0x16', 'statusMsg': 'RevertInstruction', 'to': '0x0a3545be185451b1b49a9bb537963eba0822589a', 'transactionHash': '0x7194639f8c25e4abe34473e22f05ba4cf58732613f81fa3565b04920ecc77cb3', 'transactionIndex': '0x0'}
+[2022-07-11 23:33:46,935] INFO in blockchain: call contract Auction at 0x0a3545be185451b1b49a9bb537963eba0822589a. reveal ([[200]]) -> error
+[2022-07-11 23:33:47,452] INFO in blockchain: call contract Auction at 0x0a3545be185451b1b49a9bb537963eba0822589a. reveal ([[300]]) -> error
+[2022-07-11 23:33:47,993] INFO in blockchain: call contract Auction at 0x0a3545be185451b1b49a9bb537963eba0822589a. reveal ([[600]]) -> error
+[2022-07-11 23:33:48,041] INFO in blockchain: call contract Auction at 0x0a3545be185451b1b49a9bb537963eba0822589a. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), (200,), (0,), False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (0,), False), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (0,), False)),)
+[2022-07-11 23:39:56,583] WARNING in blockchain: clean databases
+[2022-07-11 23:39:56,639] WARNING in blockchain: compile all contracts
+[2022-07-11 23:40:01,180] WARNING in blockchain: call contract Auction at 0x0a3545be185451b1b49a9bb537963eba0822589a. commit ([[200]]) error:RevertInstruction
+[2022-07-11 23:40:01,180] WARNING in blockchain: receipt: {'blockHash': '0x42e4a3615e383183d5f8492ac8c46edab979ed0be36946d6794b47587c652fa3', 'blockNumber': '0x31', 'contractAddress': '0x0000000000000000000000000000000000000000', 'from': '0x4d62824c11c131b24060e147cd42dcd2ce55ba47', 'gasUsed': '0x5a6c', 'input': '0xa86f0ccd00000000000000000000000000000000000000000000000000000000000000c8', 'logs': [], 'logsBloom': '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000', 'output': '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d636f6d6d6974206572726f722100000000000000000000000000000000000000', 'remainGas': '0x0', 'root': '0x0000000000000000000000000000000000000000000000000000000000000000', 'status': '0x16', 'statusMsg': 'RevertInstruction', 'to': '0x0a3545be185451b1b49a9bb537963eba0822589a', 'transactionHash': '0xb3f2d3e2db1d5677553dbe728bdebd45520f6e7535978cb51408dd3a7da0c99e', 'transactionIndex': '0x0'}
+[2022-07-11 23:40:29,587] WARNING in blockchain: clean databases
+[2022-07-11 23:40:29,646] WARNING in blockchain: compile all contracts
+[2022-07-11 23:40:34,055] INFO in blockchain: deploy contract Auction at 0xb2901f3c674edfd6a13c439a9d6baccf471e06b2
+[2022-07-11 23:40:34,687] INFO in blockchain: call contract Auction at 0xb2901f3c674edfd6a13c439a9d6baccf471e06b2. create_auction (['item for test']) -> ()
+[2022-07-11 23:43:44,804] WARNING in blockchain: clean databases
+[2022-07-11 23:43:44,857] WARNING in blockchain: compile all contracts
+[2022-07-11 23:43:49,272] INFO in blockchain: deploy contract Auction at 0x59a210d9e6d71bb1edc5c1e2d3e9f2ee0b456775
+[2022-07-11 23:43:49,823] INFO in blockchain: call contract Auction at 0x59a210d9e6d71bb1edc5c1e2d3e9f2ee0b456775. create_auction (['item for test']) -> ()
+[2022-07-11 23:44:08,965] WARNING in blockchain: clean databases
+[2022-07-11 23:44:09,025] WARNING in blockchain: compile all contracts
+[2022-07-11 23:44:13,887] INFO in blockchain: deploy contract Auction at 0xac0b185bccc762e50d570e5f66645ed530cc7842
+[2022-07-11 23:44:14,565] INFO in blockchain: call contract Auction at 0xac0b185bccc762e50d570e5f66645ed530cc7842. create_auction (['item for test']) -> ()
+[2022-07-11 23:47:39,120] WARNING in blockchain: clean databases
+[2022-07-11 23:47:39,177] WARNING in blockchain: compile all contracts
+[2022-07-11 23:47:43,835] INFO in blockchain: deploy contract Auction at 0xdfc2d324cc256fd08d4a09c93235e8fda382ac5e
+[2022-07-11 23:47:44,496] INFO in blockchain: call contract Auction at 0xdfc2d324cc256fd08d4a09c93235e8fda382ac5e. create_auction (['item for test']) -> ()
+[2022-07-11 23:49:32,539] WARNING in blockchain: clean databases
+[2022-07-11 23:49:32,595] WARNING in blockchain: compile all contracts
+[2022-07-11 23:49:37,240] INFO in blockchain: deploy contract Auction at 0xd2278159b9a820450e0f3738467b35be4cfbe241
+[2022-07-11 23:49:37,828] INFO in blockchain: call contract Auction at 0xd2278159b9a820450e0f3738467b35be4cfbe241. create_auction (['item for test']) -> ()
+[2022-07-11 23:51:35,084] WARNING in blockchain: clean databases
+[2022-07-11 23:51:35,143] WARNING in blockchain: compile all contracts
+[2022-07-11 23:51:39,850] INFO in blockchain: deploy contract Auction at 0x8d499c053e214a3f1b158361197a7bf116a01c79
+[2022-07-11 23:51:40,378] INFO in blockchain: call contract Auction at 0x8d499c053e214a3f1b158361197a7bf116a01c79. create_auction (['item for test']) -> ()
+[2022-07-11 23:52:49,828] WARNING in blockchain: clean databases
+[2022-07-11 23:52:49,883] WARNING in blockchain: compile all contracts
+[2022-07-11 23:52:54,317] INFO in blockchain: deploy contract Auction at 0x19429dff4440e43509efccbdb6eedc3d01c2a677
+[2022-07-11 23:52:54,860] INFO in blockchain: call contract Auction at 0x19429dff4440e43509efccbdb6eedc3d01c2a677. create_auction (['item for test']) -> ()
+[2022-07-11 23:56:25,260] WARNING in blockchain: clean databases
+[2022-07-11 23:56:25,312] WARNING in blockchain: compile all contracts
+[2022-07-11 23:57:30,363] WARNING in blockchain: clean databases
+[2022-07-11 23:57:30,418] WARNING in blockchain: compile all contracts
+[2022-07-11 23:57:35,273] INFO in blockchain: deploy contract Auction at 0xaa50d2d7bc49cdb700f1a05d17dbbc289ebcc640
+[2022-07-11 23:57:35,855] INFO in blockchain: call contract Auction at 0xaa50d2d7bc49cdb700f1a05d17dbbc289ebcc640. create_auction (['item for test']) -> ()
+[2022-07-11 23:57:54,362] WARNING in blockchain: clean databases
+[2022-07-11 23:57:54,412] WARNING in blockchain: compile all contracts
+[2022-07-11 23:57:58,869] INFO in blockchain: deploy contract Auction at 0x89964a678178b66ebd3ca20833be3ca142dff99b
+[2022-07-11 23:57:59,407] INFO in blockchain: call contract Auction at 0x89964a678178b66ebd3ca20833be3ca142dff99b. create_auction (['item for test']) -> ()
+[2022-07-11 23:57:59,937] INFO in blockchain: call contract Auction at 0x89964a678178b66ebd3ca20833be3ca142dff99b. commit ([200]) -> ()
+[2022-07-11 23:58:00,474] INFO in blockchain: call contract Auction at 0x89964a678178b66ebd3ca20833be3ca142dff99b. commit ([300]) -> ()
+[2022-07-11 23:58:01,015] INFO in blockchain: call contract Auction at 0x89964a678178b66ebd3ca20833be3ca142dff99b. commit ([400]) -> ()
+[2022-07-12 00:01:42,666] WARNING in blockchain: clean databases
+[2022-07-12 00:01:42,719] WARNING in blockchain: compile all contracts
+[2022-07-12 00:01:47,521] INFO in blockchain: deploy contract Auction at 0x5466257ab9138500ce11a8427cfdebc7b232c335
+[2022-07-12 00:01:48,130] INFO in blockchain: call contract Auction at 0x5466257ab9138500ce11a8427cfdebc7b232c335. create_auction (['item for test']) -> ()
+[2022-07-12 00:01:48,658] INFO in blockchain: call contract Auction at 0x5466257ab9138500ce11a8427cfdebc7b232c335. commit ([200]) -> ()
+[2022-07-12 00:01:49,182] INFO in blockchain: call contract Auction at 0x5466257ab9138500ce11a8427cfdebc7b232c335. commit ([300]) -> ()
+[2022-07-12 00:01:49,726] INFO in blockchain: call contract Auction at 0x5466257ab9138500ce11a8427cfdebc7b232c335. commit ([400]) -> ()
+[2022-07-12 00:01:50,261] INFO in blockchain: call contract Auction at 0x5466257ab9138500ce11a8427cfdebc7b232c335. reveal ([200]) -> ()
+[2022-07-12 00:01:50,778] INFO in blockchain: call contract Auction at 0x5466257ab9138500ce11a8427cfdebc7b232c335. reveal ([300]) -> ()
+[2022-07-12 00:01:51,313] INFO in blockchain: call contract Auction at 0x5466257ab9138500ce11a8427cfdebc7b232c335. reveal ([600]) -> ()
+[2022-07-12 00:01:51,360] INFO in blockchain: call contract Auction at 0x5466257ab9138500ce11a8427cfdebc7b232c335. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), 200, 0, False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), 300, 0, False), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), 400, 0, False)),)
+[2022-07-12 00:06:32,981] WARNING in blockchain: clean databases
+[2022-07-12 00:06:33,029] WARNING in blockchain: compile all contracts
+[2022-07-12 00:06:37,826] INFO in blockchain: deploy contract Auction at 0xd892cb7c9d1c73fc655efb49c576dc6f3626845a
+[2022-07-12 00:06:38,392] INFO in blockchain: call contract Auction at 0xd892cb7c9d1c73fc655efb49c576dc6f3626845a. create_auction (['item for test']) -> ()
+[2022-07-12 00:06:38,910] INFO in blockchain: call contract Auction at 0xd892cb7c9d1c73fc655efb49c576dc6f3626845a. commit ([[200]]) -> error
+[2022-07-12 00:06:39,454] INFO in blockchain: call contract Auction at 0xd892cb7c9d1c73fc655efb49c576dc6f3626845a. commit ([[300]]) -> error
+[2022-07-12 00:06:39,984] INFO in blockchain: call contract Auction at 0xd892cb7c9d1c73fc655efb49c576dc6f3626845a. commit ([[400]]) -> error
+[2022-07-12 00:06:40,518] INFO in blockchain: call contract Auction at 0xd892cb7c9d1c73fc655efb49c576dc6f3626845a. reveal ([[200]]) -> error
+[2022-07-12 00:06:41,052] INFO in blockchain: call contract Auction at 0xd892cb7c9d1c73fc655efb49c576dc6f3626845a. reveal ([[300]]) -> error
+[2022-07-12 00:06:41,585] INFO in blockchain: call contract Auction at 0xd892cb7c9d1c73fc655efb49c576dc6f3626845a. reveal ([[600]]) -> error
+[2022-07-12 00:06:41,640] INFO in blockchain: call contract Auction at 0xd892cb7c9d1c73fc655efb49c576dc6f3626845a. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), (200,), (0,), False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (0,), False), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (0,), False)),)
+[2022-07-12 00:09:24,597] WARNING in blockchain: clean databases
+[2022-07-12 00:09:24,664] WARNING in blockchain: compile all contracts
+[2022-07-12 00:09:54,393] WARNING in blockchain: clean databases
+[2022-07-12 00:09:54,449] WARNING in blockchain: compile all contracts
+[2022-07-12 00:09:58,878] INFO in blockchain: deploy contract Auction at 0x9a33af2555f71fb1e34445ce04be28c60d0d789e
+[2022-07-12 00:09:59,461] INFO in blockchain: call contract Auction at 0x9a33af2555f71fb1e34445ce04be28c60d0d789e. create_auction (['item for test']) -> ()
+[2022-07-12 00:09:59,982] INFO in blockchain: call contract Auction at 0x9a33af2555f71fb1e34445ce04be28c60d0d789e. commit ([[200]]) -> error
+[2022-07-12 00:10:00,513] INFO in blockchain: call contract Auction at 0x9a33af2555f71fb1e34445ce04be28c60d0d789e. commit ([[300]]) -> error
+[2022-07-12 00:10:01,046] INFO in blockchain: call contract Auction at 0x9a33af2555f71fb1e34445ce04be28c60d0d789e. commit ([[400]]) -> error
+[2022-07-12 00:10:01,567] INFO in blockchain: call contract Auction at 0x9a33af2555f71fb1e34445ce04be28c60d0d789e. reveal ([[200]]) -> error
+[2022-07-12 00:10:02,090] INFO in blockchain: call contract Auction at 0x9a33af2555f71fb1e34445ce04be28c60d0d789e. reveal ([[300]]) -> error
+[2022-07-12 00:10:02,621] INFO in blockchain: call contract Auction at 0x9a33af2555f71fb1e34445ce04be28c60d0d789e. reveal ([[600]]) -> error
+[2022-07-12 00:10:02,674] INFO in blockchain: call contract Auction at 0x9a33af2555f71fb1e34445ce04be28c60d0d789e. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), (200,), (0,), False, 0), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (0,), False, 0), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (0,), False, 0)),)
+[2022-07-12 00:10:59,830] WARNING in blockchain: clean databases
+[2022-07-12 00:10:59,885] WARNING in blockchain: compile all contracts
+[2022-07-12 00:11:04,532] INFO in blockchain: deploy contract Auction at 0xe308c6934f563415fb7aeb3a60dcd34bc31238ae
+[2022-07-12 00:11:05,090] INFO in blockchain: call contract Auction at 0xe308c6934f563415fb7aeb3a60dcd34bc31238ae. create_auction (['item for test']) -> ()
+[2022-07-12 00:11:05,626] INFO in blockchain: call contract Auction at 0xe308c6934f563415fb7aeb3a60dcd34bc31238ae. commit ([[200]]) -> error
+[2022-07-12 00:11:06,169] INFO in blockchain: call contract Auction at 0xe308c6934f563415fb7aeb3a60dcd34bc31238ae. commit ([[300]]) -> error
+[2022-07-12 00:11:06,703] INFO in blockchain: call contract Auction at 0xe308c6934f563415fb7aeb3a60dcd34bc31238ae. commit ([[400]]) -> error
+[2022-07-12 00:11:07,213] INFO in blockchain: call contract Auction at 0xe308c6934f563415fb7aeb3a60dcd34bc31238ae. reveal ([[200]]) -> error
+[2022-07-12 00:11:07,738] INFO in blockchain: call contract Auction at 0xe308c6934f563415fb7aeb3a60dcd34bc31238ae. reveal ([[300]]) -> error
+[2022-07-12 00:11:08,266] INFO in blockchain: call contract Auction at 0xe308c6934f563415fb7aeb3a60dcd34bc31238ae. reveal ([[600]]) -> error
+[2022-07-12 00:11:08,322] INFO in blockchain: call contract Auction at 0xe308c6934f563415fb7aeb3a60dcd34bc31238ae. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), (200,), (0,), False, 0), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (0,), False, 0), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (0,), False, 0)),)
+[2022-07-12 00:11:34,947] WARNING in blockchain: clean databases
+[2022-07-12 00:11:35,010] WARNING in blockchain: compile all contracts
+[2022-07-12 00:11:39,915] INFO in blockchain: deploy contract Auction at 0x941beb78687b478ea705719d6971da9961b431cc
+[2022-07-12 00:11:40,522] INFO in blockchain: call contract Auction at 0x941beb78687b478ea705719d6971da9961b431cc. create_auction (['item for test']) -> ()
+[2022-07-12 00:11:41,061] INFO in blockchain: call contract Auction at 0x941beb78687b478ea705719d6971da9961b431cc. commit ([[200]]) -> error
+[2022-07-12 00:11:41,594] INFO in blockchain: call contract Auction at 0x941beb78687b478ea705719d6971da9961b431cc. commit ([[300]]) -> error
+[2022-07-12 00:11:42,111] INFO in blockchain: call contract Auction at 0x941beb78687b478ea705719d6971da9961b431cc. commit ([[400]]) -> error
+[2022-07-12 00:11:42,643] INFO in blockchain: call contract Auction at 0x941beb78687b478ea705719d6971da9961b431cc. reveal ([[200]]) -> error
+[2022-07-12 00:11:43,170] INFO in blockchain: call contract Auction at 0x941beb78687b478ea705719d6971da9961b431cc. reveal ([[300]]) -> error
+[2022-07-12 00:11:43,704] INFO in blockchain: call contract Auction at 0x941beb78687b478ea705719d6971da9961b431cc. reveal ([[600]]) -> error
+[2022-07-12 00:11:43,760] INFO in blockchain: call contract Auction at 0x941beb78687b478ea705719d6971da9961b431cc. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), (200,), (0,), False, 0), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (0,), False, 0), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (0,), False, 0)),)
+[2022-07-12 00:14:39,416] WARNING in blockchain: clean databases
+[2022-07-12 00:14:39,473] WARNING in blockchain: compile all contracts
+[2022-07-12 00:14:43,929] INFO in blockchain: deploy contract Auction at 0xfd88713be7d4dea865716ad5ccc012ee04f0bd8e
+[2022-07-12 00:14:44,468] INFO in blockchain: call contract Auction at 0xfd88713be7d4dea865716ad5ccc012ee04f0bd8e. create_auction (['item for test']) -> ()
+[2022-07-12 00:14:44,999] INFO in blockchain: call contract Auction at 0xfd88713be7d4dea865716ad5ccc012ee04f0bd8e. commit ([[200]]) -> error
+[2022-07-12 00:14:45,535] INFO in blockchain: call contract Auction at 0xfd88713be7d4dea865716ad5ccc012ee04f0bd8e. commit ([[300]]) -> error
+[2022-07-12 00:14:46,071] INFO in blockchain: call contract Auction at 0xfd88713be7d4dea865716ad5ccc012ee04f0bd8e. commit ([[400]]) -> error
+[2022-07-12 00:14:46,598] INFO in blockchain: call contract Auction at 0xfd88713be7d4dea865716ad5ccc012ee04f0bd8e. reveal ([[200]]) -> error
+[2022-07-12 00:14:47,131] INFO in blockchain: call contract Auction at 0xfd88713be7d4dea865716ad5ccc012ee04f0bd8e. reveal ([[300]]) -> error
+[2022-07-12 00:14:47,657] INFO in blockchain: call contract Auction at 0xfd88713be7d4dea865716ad5ccc012ee04f0bd8e. reveal ([[600]]) -> error
+[2022-07-12 00:14:47,707] INFO in blockchain: call contract Auction at 0xfd88713be7d4dea865716ad5ccc012ee04f0bd8e. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), (200,), (0,), False, 0), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (0,), False, 0), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (0,), False, 0)),)
+[2022-07-12 00:16:24,595] WARNING in blockchain: clean databases
+[2022-07-12 00:16:24,650] WARNING in blockchain: compile all contracts
+[2022-07-12 00:16:29,112] INFO in blockchain: deploy contract Auction at 0xf761b638fe70200af46c921a92cb0ecfa6e74b63
+[2022-07-12 00:16:29,659] INFO in blockchain: call contract Auction at 0xf761b638fe70200af46c921a92cb0ecfa6e74b63. create_auction (['item for test']) -> ()
+[2022-07-12 00:16:30,195] INFO in blockchain: call contract Auction at 0xf761b638fe70200af46c921a92cb0ecfa6e74b63. commit ([[200]]) -> error
+[2022-07-12 00:16:30,721] INFO in blockchain: call contract Auction at 0xf761b638fe70200af46c921a92cb0ecfa6e74b63. commit ([[300]]) -> error
+[2022-07-12 00:16:31,246] INFO in blockchain: call contract Auction at 0xf761b638fe70200af46c921a92cb0ecfa6e74b63. commit ([[400]]) -> error
+[2022-07-12 00:16:31,777] INFO in blockchain: call contract Auction at 0xf761b638fe70200af46c921a92cb0ecfa6e74b63. reveal ([[200]]) -> error
+[2022-07-12 00:16:32,300] INFO in blockchain: call contract Auction at 0xf761b638fe70200af46c921a92cb0ecfa6e74b63. reveal ([[300]]) -> error
+[2022-07-12 00:16:32,821] INFO in blockchain: call contract Auction at 0xf761b638fe70200af46c921a92cb0ecfa6e74b63. reveal ([[600]]) -> error
+[2022-07-12 00:16:32,877] INFO in blockchain: call contract Auction at 0xf761b638fe70200af46c921a92cb0ecfa6e74b63. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), (200,), (0,), False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (0,), False), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (0,), False)),)
+[2022-07-12 00:16:33,340] INFO in blockchain: call contract Auction at 0xf761b638fe70200af46c921a92cb0ecfa6e74b63. compute_winner (None) -> error
+[2022-07-12 00:17:10,157] WARNING in blockchain: clean databases
+[2022-07-12 00:17:10,209] WARNING in blockchain: compile all contracts
+[2022-07-12 00:17:15,067] INFO in blockchain: deploy contract Auction at 0xb22e2e672564a24acb4790cc433ca30a2e0d11e8
+[2022-07-12 00:17:15,676] INFO in blockchain: call contract Auction at 0xb22e2e672564a24acb4790cc433ca30a2e0d11e8. create_auction (['item for test']) -> ()
+[2022-07-12 00:17:16,218] INFO in blockchain: call contract Auction at 0xb22e2e672564a24acb4790cc433ca30a2e0d11e8. commit ([[200]]) -> error
+[2022-07-12 00:17:16,742] INFO in blockchain: call contract Auction at 0xb22e2e672564a24acb4790cc433ca30a2e0d11e8. commit ([[300]]) -> error
+[2022-07-12 00:17:17,267] INFO in blockchain: call contract Auction at 0xb22e2e672564a24acb4790cc433ca30a2e0d11e8. commit ([[400]]) -> error
+[2022-07-12 00:17:17,799] INFO in blockchain: call contract Auction at 0xb22e2e672564a24acb4790cc433ca30a2e0d11e8. reveal ([[200]]) -> error
+[2022-07-12 00:17:18,331] INFO in blockchain: call contract Auction at 0xb22e2e672564a24acb4790cc433ca30a2e0d11e8. reveal ([[300]]) -> error
+[2022-07-12 00:17:18,863] INFO in blockchain: call contract Auction at 0xb22e2e672564a24acb4790cc433ca30a2e0d11e8. reveal ([[600]]) -> error
+[2022-07-12 00:17:18,955] INFO in blockchain: call contract Auction at 0xb22e2e672564a24acb4790cc433ca30a2e0d11e8. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), (200,), (0,), False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (0,), False), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (0,), False)),)
+[2022-07-12 00:17:19,379] INFO in blockchain: call contract Auction at 0xb22e2e672564a24acb4790cc433ca30a2e0d11e8. compute_winner (None) -> error
+[2022-07-12 00:18:58,074] WARNING in blockchain: clean databases
+[2022-07-12 00:18:58,130] WARNING in blockchain: compile all contracts
+[2022-07-12 00:19:02,640] INFO in blockchain: deploy contract Auction at 0xdf50f6ff72125b4c075e40fa5af501810b38f546
+[2022-07-12 00:19:03,184] INFO in blockchain: call contract Auction at 0xdf50f6ff72125b4c075e40fa5af501810b38f546. create_auction (['item for test']) -> ()
+[2022-07-12 00:19:03,717] INFO in blockchain: call contract Auction at 0xdf50f6ff72125b4c075e40fa5af501810b38f546. commit ([[200]]) -> error
+[2022-07-12 00:19:04,219] INFO in blockchain: call contract Auction at 0xdf50f6ff72125b4c075e40fa5af501810b38f546. commit ([[300]]) -> error
+[2022-07-12 00:19:04,733] INFO in blockchain: call contract Auction at 0xdf50f6ff72125b4c075e40fa5af501810b38f546. commit ([[400]]) -> error
+[2022-07-12 00:19:05,267] INFO in blockchain: call contract Auction at 0xdf50f6ff72125b4c075e40fa5af501810b38f546. reveal ([[200]]) -> error
+[2022-07-12 00:19:05,800] INFO in blockchain: call contract Auction at 0xdf50f6ff72125b4c075e40fa5af501810b38f546. reveal ([[300]]) -> error
+[2022-07-12 00:19:06,330] INFO in blockchain: call contract Auction at 0xdf50f6ff72125b4c075e40fa5af501810b38f546. reveal ([[600]]) -> error
+[2022-07-12 00:19:06,345] INFO in blockchain: call contract Auction at 0xdf50f6ff72125b4c075e40fa5af501810b38f546. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), (200,), (0,), False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (0,), False), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (0,), False)),)
+[2022-07-12 00:19:06,836] INFO in blockchain: call contract Auction at 0xdf50f6ff72125b4c075e40fa5af501810b38f546. compute_winner (None) -> ()
+[2022-07-12 00:19:06,851] INFO in blockchain: call contract Auction at 0xdf50f6ff72125b4c075e40fa5af501810b38f546. queryResult (None) -> ((('0x0000000000000000000000000000000000000000',), (0,), (0,), False), 0)
+[2022-07-12 10:33:30,565] WARNING in blockchain: clean databases
+[2022-07-12 10:33:30,618] WARNING in blockchain: compile all contracts
+[2022-07-12 10:33:35,066] INFO in blockchain: deploy contract Auction at 0x9228cdb5822f26670b2fcd6f1a42447a656d1095
+[2022-07-12 10:33:35,663] INFO in blockchain: call contract Auction at 0x9228cdb5822f26670b2fcd6f1a42447a656d1095. create_auction (['item for test']) -> ()
+[2022-07-12 10:33:36,247] INFO in blockchain: call contract Auction at 0x9228cdb5822f26670b2fcd6f1a42447a656d1095. commit ([[200]]) -> error
+[2022-07-12 10:33:36,770] INFO in blockchain: call contract Auction at 0x9228cdb5822f26670b2fcd6f1a42447a656d1095. commit ([[300]]) -> error
+[2022-07-12 10:33:37,302] INFO in blockchain: call contract Auction at 0x9228cdb5822f26670b2fcd6f1a42447a656d1095. commit ([[400]]) -> error
+[2022-07-12 10:33:37,812] INFO in blockchain: call contract Auction at 0x9228cdb5822f26670b2fcd6f1a42447a656d1095. reveal ([[200]]) -> error
+[2022-07-12 10:33:38,347] INFO in blockchain: call contract Auction at 0x9228cdb5822f26670b2fcd6f1a42447a656d1095. reveal ([[300]]) -> error
+[2022-07-12 10:33:38,866] INFO in blockchain: call contract Auction at 0x9228cdb5822f26670b2fcd6f1a42447a656d1095. reveal ([[600]]) -> error
+[2022-07-12 10:33:38,913] INFO in blockchain: call contract Auction at 0x9228cdb5822f26670b2fcd6f1a42447a656d1095. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), (200,), (200,), False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (300,), False), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (400,), False)),)
+[2022-07-12 10:33:39,384] INFO in blockchain: call contract Auction at 0x9228cdb5822f26670b2fcd6f1a42447a656d1095. compute_winner (None) -> ()
+[2022-07-12 10:33:39,407] INFO in blockchain: call contract Auction at 0x9228cdb5822f26670b2fcd6f1a42447a656d1095. queryResult (None) -> ((('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (400,), False), 300)
+[2022-07-12 10:35:26,576] WARNING in blockchain: clean databases
+[2022-07-12 10:35:26,630] WARNING in blockchain: compile all contracts
+[2022-07-12 10:35:30,929] INFO in blockchain: deploy contract Auction at 0xe55f042e5c1cb2a96a60752586dce537b88e5dc8
+[2022-07-12 10:35:31,465] INFO in blockchain: call contract Auction at 0xe55f042e5c1cb2a96a60752586dce537b88e5dc8. create_auction (['item for test']) -> ()
+[2022-07-12 10:35:32,006] INFO in blockchain: call contract Auction at 0xe55f042e5c1cb2a96a60752586dce537b88e5dc8. commit ([[200]]) -> error
+[2022-07-12 10:35:32,527] INFO in blockchain: call contract Auction at 0xe55f042e5c1cb2a96a60752586dce537b88e5dc8. commit ([[300]]) -> error
+[2022-07-12 10:35:33,067] INFO in blockchain: call contract Auction at 0xe55f042e5c1cb2a96a60752586dce537b88e5dc8. commit ([[400]]) -> error
+[2022-07-12 10:35:33,595] INFO in blockchain: call contract Auction at 0xe55f042e5c1cb2a96a60752586dce537b88e5dc8. reveal ([[200]]) -> error
+[2022-07-12 10:35:34,120] INFO in blockchain: call contract Auction at 0xe55f042e5c1cb2a96a60752586dce537b88e5dc8. reveal ([[300]]) -> error
+[2022-07-12 10:35:34,640] INFO in blockchain: call contract Auction at 0xe55f042e5c1cb2a96a60752586dce537b88e5dc8. reveal ([[600]]) -> error
+[2022-07-12 10:35:34,698] INFO in blockchain: call contract Auction at 0xe55f042e5c1cb2a96a60752586dce537b88e5dc8. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), (200,), (0,), False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (0,), False), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (0,), False)),)
+[2022-07-12 10:35:35,168] INFO in blockchain: call contract Auction at 0xe55f042e5c1cb2a96a60752586dce537b88e5dc8. compute_winner (None) -> ()
+[2022-07-12 10:35:35,219] INFO in blockchain: call contract Auction at 0xe55f042e5c1cb2a96a60752586dce537b88e5dc8. queryResult (None) -> ((('0x0000000000000000000000000000000000000000',), (0,), (0,), False), 0)
+[2022-07-12 10:40:04,281] WARNING in blockchain: clean databases
+[2022-07-12 10:40:04,340] WARNING in blockchain: compile all contracts
+[2022-07-12 10:40:08,770] INFO in blockchain: deploy contract Auction at 0x52b4e7f2db226b6aa3d3565fda5deb999bf32fc1
+[2022-07-12 10:40:09,299] INFO in blockchain: call contract Auction at 0x52b4e7f2db226b6aa3d3565fda5deb999bf32fc1. create_auction (['item for test']) -> ()
+[2022-07-12 10:40:09,832] INFO in blockchain: call contract Auction at 0x52b4e7f2db226b6aa3d3565fda5deb999bf32fc1. commit ([[200]]) -> error
+[2022-07-12 10:40:10,356] INFO in blockchain: call contract Auction at 0x52b4e7f2db226b6aa3d3565fda5deb999bf32fc1. commit ([[300]]) -> error
+[2022-07-12 10:40:10,881] INFO in blockchain: call contract Auction at 0x52b4e7f2db226b6aa3d3565fda5deb999bf32fc1. commit ([[400]]) -> error
+[2022-07-12 10:40:11,400] INFO in blockchain: call contract Auction at 0x52b4e7f2db226b6aa3d3565fda5deb999bf32fc1. reveal ([[200]]) -> error
+[2022-07-12 10:40:11,931] INFO in blockchain: call contract Auction at 0x52b4e7f2db226b6aa3d3565fda5deb999bf32fc1. reveal ([[300]]) -> error
+[2022-07-12 10:40:12,460] INFO in blockchain: call contract Auction at 0x52b4e7f2db226b6aa3d3565fda5deb999bf32fc1. reveal ([[600]]) -> error
+[2022-07-12 10:40:12,504] INFO in blockchain: call contract Auction at 0x52b4e7f2db226b6aa3d3565fda5deb999bf32fc1. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), (200,), (0,), False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (0,), False), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (0,), False)),)
+[2022-07-12 10:40:12,727] INFO in blockchain: call contract Auction at 0x52b4e7f2db226b6aa3d3565fda5deb999bf32fc1. queryBidderByaddr (None) -> ((('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (600,), True),)
+[2022-07-12 10:40:13,215] INFO in blockchain: call contract Auction at 0x52b4e7f2db226b6aa3d3565fda5deb999bf32fc1. compute_winner (None) -> ()
+[2022-07-12 10:40:13,327] INFO in blockchain: call contract Auction at 0x52b4e7f2db226b6aa3d3565fda5deb999bf32fc1. queryResult (None) -> ((('0x0000000000000000000000000000000000000000',), (0,), (0,), False), 0)
+[2022-07-12 10:53:00,151] WARNING in blockchain: clean databases
+[2022-07-12 10:53:00,205] WARNING in blockchain: compile all contracts
+[2022-07-12 10:53:04,590] INFO in blockchain: deploy contract Auction at 0x2659e43991ae3179e3b0072d6e283b1ef44f2364
+[2022-07-12 10:53:05,134] INFO in blockchain: call contract Auction at 0x2659e43991ae3179e3b0072d6e283b1ef44f2364. create_auction (['item for test']) -> ()
+[2022-07-12 10:53:05,657] INFO in blockchain: call contract Auction at 0x2659e43991ae3179e3b0072d6e283b1ef44f2364. commit ([[200]]) -> error
+[2022-07-12 10:53:06,188] INFO in blockchain: call contract Auction at 0x2659e43991ae3179e3b0072d6e283b1ef44f2364. commit ([[300]]) -> error
+[2022-07-12 10:53:06,739] INFO in blockchain: call contract Auction at 0x2659e43991ae3179e3b0072d6e283b1ef44f2364. commit ([[400]]) -> error
+[2022-07-12 10:53:07,265] INFO in blockchain: call contract Auction at 0x2659e43991ae3179e3b0072d6e283b1ef44f2364. reveal ([[200]]) -> error
+[2022-07-12 10:53:07,788] INFO in blockchain: call contract Auction at 0x2659e43991ae3179e3b0072d6e283b1ef44f2364. reveal ([[300]]) -> error
+[2022-07-12 10:53:08,318] INFO in blockchain: call contract Auction at 0x2659e43991ae3179e3b0072d6e283b1ef44f2364. reveal ([[600]]) -> error
+[2022-07-12 10:53:08,370] INFO in blockchain: call contract Auction at 0x2659e43991ae3179e3b0072d6e283b1ef44f2364. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), (200,), (200,), False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (300,), False), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (600,), True)),)
+[2022-07-12 10:53:08,608] INFO in blockchain: call contract Auction at 0x2659e43991ae3179e3b0072d6e283b1ef44f2364. queryBidderByaddr (None) -> ((('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (600,), True),)
+[2022-07-12 10:53:09,131] INFO in blockchain: call contract Auction at 0x2659e43991ae3179e3b0072d6e283b1ef44f2364. compute_winner (None) -> ()
+[2022-07-12 10:53:09,225] INFO in blockchain: call contract Auction at 0x2659e43991ae3179e3b0072d6e283b1ef44f2364. queryResult (None) -> ((('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (300,), False), 200)
+[2022-07-12 14:33:10,688] INFO in app: starting server at :::8888 (debug=True)
+[2022-07-12 14:33:10,896] INFO in app: starting server at :::8888 (debug=True)
+[2022-07-12 14:41:18,050] INFO in app: starting server at :::8888 (debug=True)
+[2022-07-12 14:41:18,256] INFO in app: starting server at :::8888 (debug=True)
+[2022-07-12 14:42:25,728] INFO in app: starting server at :::8888 (debug=True)
+[2022-07-12 14:51:34,526] INFO in app: starting server at :::8888 (debug=True)
+[2022-07-12 14:52:31,895] INFO in app: starting server at :::8888 (debug=True)
+[2022-07-12 14:52:36,227] INFO in app: starting server at :::8888 (debug=True)
+[2022-07-12 14:53:59,877] INFO in app: starting server at :::8888 (debug=True)
+[2022-07-12 14:54:08,285] INFO in app: starting server at :::8888 (debug=True)
+[2022-07-12 14:54:11,601] INFO in app: starting server at :::8888 (debug=True)
+[2022-07-12 14:54:14,896] INFO in app: starting server at :::8888 (debug=True)
+[2022-07-12 15:01:00,523] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 15:01:00,708] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 15:02:03,545] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 15:06:41,490] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 15:06:57,603] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 15:07:12,822] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 15:37:06,488] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 15:37:07,198] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 15:38:36,255] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 15:50:22,613] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 15:50:46,032] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 15:51:48,402] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 15:57:19,234] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 15:57:19,912] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 15:58:52,062] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 16:01:14,665] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 16:02:39,821] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 16:03:32,771] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 16:04:26,879] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 16:04:56,565] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 16:05:12,783] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 16:05:19,876] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 16:07:37,058] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 16:07:37,727] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 18:49:33,244] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 18:49:34,021] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 18:52:33,313] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 18:57:15,966] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 18:57:23,890] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 18:58:02,733] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 19:00:52,911] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 19:02:56,664] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 19:07:48,702] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:02:30,975] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:02:31,678] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:04:27,572] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:04:28,232] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:06:51,859] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:07:25,543] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:07:32,435] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:10:41,608] WARNING in blockchain: clean databases
+[2022-07-12 20:10:41,672] WARNING in blockchain: compile all contracts
+[2022-07-12 20:16:18,479] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:16:43,902] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:16:45,830] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:42:44,030] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:42:44,734] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:43:17,531] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:45:21,221] INFO in blockchain: deploy contract Auction at 0xb47222481b6d3873fb5bbfd7d8396338c4162fee
+[2022-07-12 20:46:43,344] INFO in blockchain: deploy contract Auction at 0xc4f20204bf14bdb5ccc217c978e0315a5de61264
+[2022-07-12 20:48:10,226] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:48:40,724] INFO in blockchain: deploy contract Auction at 0xe5cea5ad1ea8998d7b8745e945c0c979687ba230
+[2022-07-12 20:48:41,341] INFO in blockchain: call contract Auction at 0xe5cea5ad1ea8998d7b8745e945c0c979687ba230. create_auction (['watch']) -> ()
+[2022-07-12 20:49:21,942] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:51:54,249] INFO in blockchain: deploy contract Auction at 0xd294d058edc8095189e04f03ce312f80f6781e9b
+[2022-07-12 20:51:54,833] INFO in blockchain: call contract Auction at 0xd294d058edc8095189e04f03ce312f80f6781e9b. create_auction (['watch']) -> ()
+[2022-07-12 20:52:54,547] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:54:16,359] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:54:57,002] INFO in blockchain: deploy contract Auction at 0xeb3dab16ea5dff6316d0c647cf78815932ff7b8e
+[2022-07-12 20:54:57,551] INFO in blockchain: call contract Auction at 0xeb3dab16ea5dff6316d0c647cf78815932ff7b8e. create_auction (['watch']) -> ()
+[2022-07-12 20:57:21,055] INFO in blockchain: deploy contract Auction at 0x7368c0916bd8fb430c4d8ff71e8b41f27f47d349
+[2022-07-12 20:57:21,616] INFO in blockchain: call contract Auction at 0x7368c0916bd8fb430c4d8ff71e8b41f27f47d349. create_auction (['watch']) -> ()
+[2022-07-12 20:58:04,278] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:58:07,161] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 20:58:25,580] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-12 21:02:21,598] INFO in blockchain: deploy contract Auction at 0x6e4ed51bdc4451adbda68e0b2ea21aee6ee777c6
+[2022-07-12 21:02:22,153] INFO in blockchain: call contract Auction at 0x6e4ed51bdc4451adbda68e0b2ea21aee6ee777c6. create_auction (['item1']) -> ()
+[2022-07-13 12:49:35,946] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 12:49:36,642] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 12:50:19,664] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 12:51:51,838] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 13:03:18,372] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 13:03:19,051] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 13:04:20,448] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 13:04:44,929] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 13:05:08,347] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 13:05:13,422] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 13:05:51,281] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 13:10:22,737] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 13:10:23,438] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 13:15:29,628] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 13:15:57,167] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 13:17:26,361] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 13:17:29,225] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 18:54:51,149] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 18:54:51,853] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:01:56,448] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:02:11,391] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:02:23,079] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:10:00,157] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:10:00,865] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:16:33,568] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:19:50,617] WARNING in blockchain: clean databases
+[2022-07-13 19:19:50,679] WARNING in blockchain: compile all contracts
+[2022-07-13 19:19:55,067] INFO in blockchain: deploy contract Auction at 0xf045dce3de166924f6d8bdbd4c6a6d459f5babe7
+[2022-07-13 19:19:55,632] INFO in blockchain: call contract Auction at 0xf045dce3de166924f6d8bdbd4c6a6d459f5babe7. create_auction (['item for test']) -> ()
+[2022-07-13 19:19:56,143] INFO in blockchain: call contract Auction at 0xf045dce3de166924f6d8bdbd4c6a6d459f5babe7. commit ([[200]]) -> error
+[2022-07-13 19:19:56,679] INFO in blockchain: call contract Auction at 0xf045dce3de166924f6d8bdbd4c6a6d459f5babe7. commit ([[300]]) -> error
+[2022-07-13 19:19:57,197] INFO in blockchain: call contract Auction at 0xf045dce3de166924f6d8bdbd4c6a6d459f5babe7. commit ([[400]]) -> error
+[2022-07-13 19:19:57,717] INFO in blockchain: call contract Auction at 0xf045dce3de166924f6d8bdbd4c6a6d459f5babe7. reveal ([[200]]) -> error
+[2022-07-13 19:19:58,251] INFO in blockchain: call contract Auction at 0xf045dce3de166924f6d8bdbd4c6a6d459f5babe7. reveal ([[300]]) -> error
+[2022-07-13 19:19:58,778] INFO in blockchain: call contract Auction at 0xf045dce3de166924f6d8bdbd4c6a6d459f5babe7. reveal ([[600]]) -> error
+[2022-07-13 19:19:58,841] INFO in blockchain: call contract Auction at 0xf045dce3de166924f6d8bdbd4c6a6d459f5babe7. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), (200,), (200,), False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (300,), False), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (600,), True)),)
+[2022-07-13 19:19:59,069] INFO in blockchain: call contract Auction at 0xf045dce3de166924f6d8bdbd4c6a6d459f5babe7. queryBidderByaddr (None) -> ((('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), (400,), (600,), True),)
+[2022-07-13 19:19:59,538] INFO in blockchain: call contract Auction at 0xf045dce3de166924f6d8bdbd4c6a6d459f5babe7. compute_winner (None) -> ()
+[2022-07-13 19:19:59,599] INFO in blockchain: call contract Auction at 0xf045dce3de166924f6d8bdbd4c6a6d459f5babe7. queryResult (None) -> ((('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), (300,), (300,), False), 200)
+[2022-07-13 19:20:15,277] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:21:58,711] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:22:03,672] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:22:08,704] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:26:47,118] INFO in blockchain: deploy contract Auction at 0xfb106615912f96059aab7bbe93454878b4bb2c1a
+[2022-07-13 19:26:47,669] INFO in blockchain: call contract Auction at 0xfb106615912f96059aab7bbe93454878b4bb2c1a. create_auction (['item']) -> ()
+[2022-07-13 19:28:50,543] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:28:52,475] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:34:53,549] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:34:55,393] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:35:43,591] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:35:58,938] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:36:46,031] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:37:42,199] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:39:29,839] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:39:49,068] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:39:58,224] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:41:12,940] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:53:25,589] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:53:26,260] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:53:56,082] INFO in blockchain: call contract Auction at 0xfb106615912f96059aab7bbe93454878b4bb2c1a. commit ([[100]]) -> error
+[2022-07-13 19:53:56,617] INFO in blockchain: call contract Auction at 0xfb106615912f96059aab7bbe93454878b4bb2c1a. reveal ([[100]]) -> error
+[2022-07-13 19:54:21,497] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:55:57,752] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:56:04,610] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:56:51,926] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:56:52,581] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:57:35,710] INFO in blockchain: call contract Auction at 0xfb106615912f96059aab7bbe93454878b4bb2c1a. commit ([[200]]) -> error
+[2022-07-13 19:57:36,254] INFO in blockchain: call contract Auction at 0xfb106615912f96059aab7bbe93454878b4bb2c1a. reveal ([[200]]) -> error
+[2022-07-13 19:58:11,507] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 19:58:19,592] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:01:58,976] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:02:25,524] INFO in blockchain: call contract Auction at 0xfb106615912f96059aab7bbe93454878b4bb2c1a. compute_winner (None) -> ()
+[2022-07-13 20:02:25,563] INFO in blockchain: call contract Auction at 0xfb106615912f96059aab7bbe93454878b4bb2c1a. queryResult (None) -> ((('0x8cd0d58c322c36d2d782bbfd080a3da90911488e',), (200,), (200,), False), 100)
+[2022-07-13 20:03:44,063] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:03:44,722] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:04:09,776] INFO in blockchain: call contract Auction at 0xfb106615912f96059aab7bbe93454878b4bb2c1a. compute_winner (None) -> ()
+[2022-07-13 20:04:09,818] INFO in blockchain: call contract Auction at 0xfb106615912f96059aab7bbe93454878b4bb2c1a. queryResult (None) -> ((('0x8cd0d58c322c36d2d782bbfd080a3da90911488e',), (200,), (200,), False), 100)
+[2022-07-13 20:04:34,019] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:05:02,054] INFO in blockchain: call contract Auction at 0xfb106615912f96059aab7bbe93454878b4bb2c1a. compute_winner (None) -> ()
+[2022-07-13 20:05:02,140] INFO in blockchain: call contract Auction at 0xfb106615912f96059aab7bbe93454878b4bb2c1a. queryResult (None) -> ((('0x8cd0d58c322c36d2d782bbfd080a3da90911488e',), (200,), (200,), False), 100)
+[2022-07-13 20:06:05,196] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:06:26,795] WARNING in blockchain: clean databases
+[2022-07-13 20:06:26,853] WARNING in blockchain: compile all contracts
+[2022-07-13 20:06:42,085] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:06:42,732] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:07:14,840] INFO in blockchain: deploy contract Auction at 0x1723e4c5cb2b0e957c7c2b33ab3345ce61be8def
+[2022-07-13 20:07:15,402] INFO in blockchain: call contract Auction at 0x1723e4c5cb2b0e957c7c2b33ab3345ce61be8def. create_auction (['item']) -> ()
+[2022-07-13 20:08:00,374] INFO in blockchain: call contract Auction at 0x1723e4c5cb2b0e957c7c2b33ab3345ce61be8def. commit ([[100]]) -> error
+[2022-07-13 20:08:00,877] INFO in blockchain: call contract Auction at 0x1723e4c5cb2b0e957c7c2b33ab3345ce61be8def. reveal ([[100]]) -> error
+[2022-07-13 20:08:38,715] INFO in blockchain: call contract Auction at 0x1723e4c5cb2b0e957c7c2b33ab3345ce61be8def. commit ([[200]]) -> error
+[2022-07-13 20:08:39,268] INFO in blockchain: call contract Auction at 0x1723e4c5cb2b0e957c7c2b33ab3345ce61be8def. reveal ([[200]]) -> error
+[2022-07-13 20:09:02,953] INFO in blockchain: call contract Auction at 0x1723e4c5cb2b0e957c7c2b33ab3345ce61be8def. compute_winner (None) -> ()
+[2022-07-13 20:09:03,009] INFO in blockchain: call contract Auction at 0x1723e4c5cb2b0e957c7c2b33ab3345ce61be8def. queryResult (None) -> ((('0x83f5518339e74b3a479228da5b6a777ad4897868',), (200,), (200,), False), 100)
+[2022-07-13 20:10:05,704] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:10:08,621] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:10:50,488] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:11:18,907] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:11:40,643] INFO in blockchain: call contract Auction at 0x1723e4c5cb2b0e957c7c2b33ab3345ce61be8def. compute_winner (None) -> ()
+[2022-07-13 20:11:40,705] INFO in blockchain: call contract Auction at 0x1723e4c5cb2b0e957c7c2b33ab3345ce61be8def. queryResult (None) -> ((('0x83f5518339e74b3a479228da5b6a777ad4897868',), (200,), (200,), False), 100)
+[2022-07-13 20:12:08,191] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:12:34,847] INFO in blockchain: call contract Auction at 0x1723e4c5cb2b0e957c7c2b33ab3345ce61be8def. compute_winner (None) -> ()
+[2022-07-13 20:12:34,888] INFO in blockchain: call contract Auction at 0x1723e4c5cb2b0e957c7c2b33ab3345ce61be8def. queryResult (None) -> ((('0x83f5518339e74b3a479228da5b6a777ad4897868',), (200,), (200,), False), 100)
+[2022-07-13 20:13:38,288] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:13:49,366] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:14:07,594] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-13 20:14:25,230] INFO in blockchain: call contract Auction at 0x1723e4c5cb2b0e957c7c2b33ab3345ce61be8def. compute_winner (None) -> ()
+[2022-07-13 20:14:25,257] INFO in blockchain: call contract Auction at 0x1723e4c5cb2b0e957c7c2b33ab3345ce61be8def. queryResult (None) -> ((('0x83f5518339e74b3a479228da5b6a777ad4897868',), (200,), (200,), False), 100)
+[2022-07-13 20:17:39,749] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-15 00:47:08,934] WARNING in blockchain: clean databases
+[2022-07-15 00:47:08,990] WARNING in blockchain: compile all contracts
+[2022-07-15 00:48:04,077] WARNING in blockchain: clean databases
+[2022-07-15 00:48:04,131] WARNING in blockchain: compile all contracts
+[2022-07-15 00:48:08,856] INFO in blockchain: deploy contract Auction at 0x82aab836a1e41b65df612a296d8fdf5ee1d91e25
+[2022-07-15 00:48:09,408] INFO in blockchain: call contract Auction at 0x82aab836a1e41b65df612a296d8fdf5ee1d91e25. create_auction (['item for test']) -> ()
+[2022-07-15 00:49:44,446] WARNING in blockchain: clean databases
+[2022-07-15 00:49:44,508] WARNING in blockchain: compile all contracts
+[2022-07-15 00:49:48,844] INFO in blockchain: deploy contract Auction at 0x6d21ad89d08689d769651fff4170c49a3714ec56
+[2022-07-15 00:49:49,387] INFO in blockchain: call contract Auction at 0x6d21ad89d08689d769651fff4170c49a3714ec56. create_auction (['item for test']) -> ()
+[2022-07-15 00:49:49,914] INFO in blockchain: call contract Auction at 0x6d21ad89d08689d769651fff4170c49a3714ec56. commit ([['nonce', '0x70147d9c3fe0b99a2ec9f2cbd549e637cb54c230e2bc7e6fb34b629ebe04272a']]) -> error
+[2022-07-15 00:49:50,434] INFO in blockchain: call contract Auction at 0x6d21ad89d08689d769651fff4170c49a3714ec56. commit ([['nonce', '0xb13c1b480862f60929e6797e1ae0da6182cd7e88e202272e755fbe1ccbefd106']]) -> error
+[2022-07-15 00:49:50,965] INFO in blockchain: call contract Auction at 0x6d21ad89d08689d769651fff4170c49a3714ec56. commit ([['nonce', '0x3a580c46f7ce35ca329ee6cb504ecfdcbb68581135605d3ae98426cff1993135']]) -> error
+[2022-07-15 00:49:51,483] INFO in blockchain: call contract Auction at 0x6d21ad89d08689d769651fff4170c49a3714ec56. reveal ([[100]]) -> error
+[2022-07-15 00:49:52,002] INFO in blockchain: call contract Auction at 0x6d21ad89d08689d769651fff4170c49a3714ec56. reveal ([[100]]) -> error
+[2022-07-15 00:49:52,533] INFO in blockchain: call contract Auction at 0x6d21ad89d08689d769651fff4170c49a3714ec56. reveal ([[100]]) -> error
+[2022-07-15 00:49:52,584] INFO in blockchain: call contract Auction at 0x6d21ad89d08689d769651fff4170c49a3714ec56. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), ('nonce', b"p\x14}\x9c?\xe0\xb9\x9a.\xc9\xf2\xcb\xd5I\xe67\xcbT\xc20\xe2\xbc~o\xb3Kb\x9e\xbe\x04'*"), (100,), True), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), ('nonce', b"\xb1<\x1bH\x08b\xf6\t)\xe6y~\x1a\xe0\xdaa\x82\xcd~\x88\xe2\x02'.u_\xbe\x1c\xcb\xef\xd1\x06"), (100,), True), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), ('nonce', b':X\x0cF\xf7\xce5\xca2\x9e\xe6\xcbPN\xcf\xdc\xbbhX\x115`]:\xe9\x84&\xcf\xf1\x9915'), (100,), True)),)
+[2022-07-15 00:49:52,827] INFO in blockchain: call contract Auction at 0x6d21ad89d08689d769651fff4170c49a3714ec56. queryBidderByaddr (None) -> ((('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), ('nonce', b':X\x0cF\xf7\xce5\xca2\x9e\xe6\xcbPN\xcf\xdc\xbbhX\x115`]:\xe9\x84&\xcf\xf1\x9915'), (100,), True),)
+[2022-07-15 00:49:53,298] INFO in blockchain: call contract Auction at 0x6d21ad89d08689d769651fff4170c49a3714ec56. compute_winner (None) -> ()
+[2022-07-15 00:49:53,345] INFO in blockchain: call contract Auction at 0x6d21ad89d08689d769651fff4170c49a3714ec56. queryResult (None) -> ((('0x0000000000000000000000000000000000000000',), ('', b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'), (0,), False), 0)
+[2022-07-15 00:50:28,593] WARNING in blockchain: clean databases
+[2022-07-15 00:50:28,652] WARNING in blockchain: compile all contracts
+[2022-07-15 00:50:32,959] INFO in blockchain: deploy contract Auction at 0x1c8f80c5d1407542d35b478277a8bc8790d4fae6
+[2022-07-15 00:50:33,650] INFO in blockchain: call contract Auction at 0x1c8f80c5d1407542d35b478277a8bc8790d4fae6. create_auction (['item for test']) -> ()
+[2022-07-15 00:50:34,184] INFO in blockchain: call contract Auction at 0x1c8f80c5d1407542d35b478277a8bc8790d4fae6. commit ([['nonce', '0x70147d9c3fe0b99a2ec9f2cbd549e637cb54c230e2bc7e6fb34b629ebe04272a']]) -> error
+[2022-07-15 00:50:34,709] INFO in blockchain: call contract Auction at 0x1c8f80c5d1407542d35b478277a8bc8790d4fae6. commit ([['nonce', '0xb13c1b480862f60929e6797e1ae0da6182cd7e88e202272e755fbe1ccbefd106']]) -> error
+[2022-07-15 00:50:35,227] INFO in blockchain: call contract Auction at 0x1c8f80c5d1407542d35b478277a8bc8790d4fae6. commit ([['nonce', '0x3a580c46f7ce35ca329ee6cb504ecfdcbb68581135605d3ae98426cff1993135']]) -> error
+[2022-07-15 00:53:31,256] WARNING in blockchain: clean databases
+[2022-07-15 00:53:31,302] WARNING in blockchain: compile all contracts
+[2022-07-15 00:53:35,625] INFO in blockchain: deploy contract Auction at 0x64df31b6ddf924d2f96fb4a9f0c540c65fbb7735
+[2022-07-15 00:53:36,188] INFO in blockchain: call contract Auction at 0x64df31b6ddf924d2f96fb4a9f0c540c65fbb7735. create_auction (['item for test']) -> ()
+[2022-07-15 00:53:36,710] INFO in blockchain: call contract Auction at 0x64df31b6ddf924d2f96fb4a9f0c540c65fbb7735. commit ([['nonce', '0x94e6593a26bef981fe8b6a7e567e5f6020f5e057e92d09f1750811adaae695f2']]) -> error
+[2022-07-15 00:53:37,239] INFO in blockchain: call contract Auction at 0x64df31b6ddf924d2f96fb4a9f0c540c65fbb7735. commit ([['nonce', '0x1f88c8d26d3e9a7ef8d4401e3088092d5841e1cc6da2b8714146695143c21d74']]) -> error
+[2022-07-15 00:53:37,769] INFO in blockchain: call contract Auction at 0x64df31b6ddf924d2f96fb4a9f0c540c65fbb7735. commit ([['nonce', '0xd04acb2b42e4d4fa87458720f0f0e8adceca48376585993b0cde7515f9345202']]) -> error
+[2022-07-15 00:53:38,300] INFO in blockchain: call contract Auction at 0x64df31b6ddf924d2f96fb4a9f0c540c65fbb7735. reveal ([[100]]) -> error
+[2022-07-15 00:53:38,837] INFO in blockchain: call contract Auction at 0x64df31b6ddf924d2f96fb4a9f0c540c65fbb7735. reveal ([[100]]) -> error
+[2022-07-15 00:53:39,350] INFO in blockchain: call contract Auction at 0x64df31b6ddf924d2f96fb4a9f0c540c65fbb7735. reveal ([[100]]) -> error
+[2022-07-15 00:53:39,434] INFO in blockchain: call contract Auction at 0x64df31b6ddf924d2f96fb4a9f0c540c65fbb7735. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), ('nonce', b'\x94\xe6Y:&\xbe\xf9\x81\xfe\x8bj~V~_` \xf5\xe0W\xe9-\t\xf1u\x08\x11\xad\xaa\xe6\x95\xf2'), (100,), False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), ('nonce', b'\x1f\x88\xc8\xd2m>\x9a~\xf8\xd4@\x1e0\x88\t-XA\xe1\xccm\xa2\xb8qAFiQC\xc2\x1dt'), (100,), True), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), ('nonce', b'\xd0J\xcb+B\xe4\xd4\xfa\x87E\x87 \xf0\xf0\xe8\xad\xce\xcaH7e\x85\x99;\x0c\xdeu\x15\xf94R\x02'), (100,), True)),)
+[2022-07-15 00:53:39,647] INFO in blockchain: call contract Auction at 0x64df31b6ddf924d2f96fb4a9f0c540c65fbb7735. queryBidderByaddr (None) -> ((('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), ('nonce', b'\xd0J\xcb+B\xe4\xd4\xfa\x87E\x87 \xf0\xf0\xe8\xad\xce\xcaH7e\x85\x99;\x0c\xdeu\x15\xf94R\x02'), (100,), True),)
+[2022-07-15 00:53:40,083] INFO in blockchain: call contract Auction at 0x64df31b6ddf924d2f96fb4a9f0c540c65fbb7735. compute_winner (None) -> ()
+[2022-07-15 00:53:40,165] INFO in blockchain: call contract Auction at 0x64df31b6ddf924d2f96fb4a9f0c540c65fbb7735. queryResult (None) -> ((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), ('nonce', b'\x94\xe6Y:&\xbe\xf9\x81\xfe\x8bj~V~_` \xf5\xe0W\xe9-\t\xf1u\x08\x11\xad\xaa\xe6\x95\xf2'), (100,), False), 0)
+[2022-07-15 00:55:00,969] WARNING in blockchain: clean databases
+[2022-07-15 00:55:01,029] WARNING in blockchain: compile all contracts
+[2022-07-15 00:55:05,410] INFO in blockchain: deploy contract Auction at 0xc0ce43a43ac0e490b0782fc6ce9c2c0532e4b7df
+[2022-07-15 00:55:05,989] INFO in blockchain: call contract Auction at 0xc0ce43a43ac0e490b0782fc6ce9c2c0532e4b7df. create_auction (['item for test']) -> ()
+[2022-07-15 00:55:06,517] INFO in blockchain: call contract Auction at 0xc0ce43a43ac0e490b0782fc6ce9c2c0532e4b7df. commit ([['nonce', '0x94e6593a26bef981fe8b6a7e567e5f6020f5e057e92d09f1750811adaae695f2']]) -> error
+[2022-07-15 00:55:07,047] INFO in blockchain: call contract Auction at 0xc0ce43a43ac0e490b0782fc6ce9c2c0532e4b7df. commit ([['nonce', '0x1f88c8d26d3e9a7ef8d4401e3088092d5841e1cc6da2b8714146695143c21d74']]) -> error
+[2022-07-15 00:55:07,570] INFO in blockchain: call contract Auction at 0xc0ce43a43ac0e490b0782fc6ce9c2c0532e4b7df. commit ([['nonce', '0xd04acb2b42e4d4fa87458720f0f0e8adceca48376585993b0cde7515f9345202']]) -> error
+[2022-07-15 00:55:08,082] INFO in blockchain: call contract Auction at 0xc0ce43a43ac0e490b0782fc6ce9c2c0532e4b7df. reveal ([[100]]) -> error
+[2022-07-15 00:55:08,613] INFO in blockchain: call contract Auction at 0xc0ce43a43ac0e490b0782fc6ce9c2c0532e4b7df. reveal ([[200]]) -> error
+[2022-07-15 00:55:09,139] INFO in blockchain: call contract Auction at 0xc0ce43a43ac0e490b0782fc6ce9c2c0532e4b7df. reveal ([[300]]) -> error
+[2022-07-15 00:55:09,183] INFO in blockchain: call contract Auction at 0xc0ce43a43ac0e490b0782fc6ce9c2c0532e4b7df. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), ('nonce', b'\x94\xe6Y:&\xbe\xf9\x81\xfe\x8bj~V~_` \xf5\xe0W\xe9-\t\xf1u\x08\x11\xad\xaa\xe6\x95\xf2'), (100,), False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), ('nonce', b'\x1f\x88\xc8\xd2m>\x9a~\xf8\xd4@\x1e0\x88\t-XA\xe1\xccm\xa2\xb8qAFiQC\xc2\x1dt'), (200,), False), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), ('nonce', b'\xd0J\xcb+B\xe4\xd4\xfa\x87E\x87 \xf0\xf0\xe8\xad\xce\xcaH7e\x85\x99;\x0c\xdeu\x15\xf94R\x02'), (300,), False)),)
+[2022-07-15 00:55:09,651] INFO in blockchain: call contract Auction at 0xc0ce43a43ac0e490b0782fc6ce9c2c0532e4b7df. compute_winner (None) -> ()
+[2022-07-15 00:55:09,704] INFO in blockchain: call contract Auction at 0xc0ce43a43ac0e490b0782fc6ce9c2c0532e4b7df. queryResult (None) -> ((('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), ('nonce', b'\xd0J\xcb+B\xe4\xd4\xfa\x87E\x87 \xf0\xf0\xe8\xad\xce\xcaH7e\x85\x99;\x0c\xdeu\x15\xf94R\x02'), (300,), False), 200)
+[2022-07-15 10:46:36,952] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-15 10:46:37,608] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-15 10:46:46,482] WARNING in blockchain: clean databases
+[2022-07-15 10:46:46,547] WARNING in blockchain: compile all contracts
+[2022-07-15 10:46:52,875] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-15 10:46:53,524] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-15 10:47:51,882] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-15 10:48:18,574] INFO in blockchain: deploy contract Auction at 0x24b6de08844982fb3dbaf659110cee3998a54a01
+[2022-07-15 10:48:20,146] INFO in blockchain: call contract Auction at 0x24b6de08844982fb3dbaf659110cee3998a54a01. create_auction (['item']) -> ()
+[2022-07-15 10:48:38,790] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-15 10:49:03,137] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-15 10:49:09,008] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-15 10:50:50,449] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-15 10:50:57,161] INFO in blockchain: deploy contract Auction at 0x84139e0d46160aa2dd2541f499049095596891c9
+[2022-07-15 10:50:58,706] INFO in blockchain: call contract Auction at 0x84139e0d46160aa2dd2541f499049095596891c9. create_auction (['item']) -> ()
+[2022-07-15 10:51:14,268] INFO in blockchain: deploy contract Auction at 0x09d88e27711e78d2c389eb8f532ccdc9abe43077
+[2022-07-15 10:51:15,888] INFO in blockchain: call contract Auction at 0x09d88e27711e78d2c389eb8f532ccdc9abe43077. create_auction (['item']) -> ()
+[2022-07-15 10:52:27,252] INFO in blockchain: deploy contract Auction at 0x7159011af634f83f84647ad54c281d42609dd2fe
+[2022-07-15 10:52:28,800] INFO in blockchain: call contract Auction at 0x7159011af634f83f84647ad54c281d42609dd2fe. create_auction (['item']) -> ()
+[2022-07-17 12:01:41,790] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:01:42,463] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:03:00,715] INFO in blockchain: deploy contract Auction at 0xab9f63d87a34c1da1af8771fed05879b1c19f1eb
+[2022-07-17 12:03:01,318] INFO in blockchain: call contract Auction at 0xab9f63d87a34c1da1af8771fed05879b1c19f1eb. create_auction (['123']) -> ()
+[2022-07-17 12:04:33,852] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:04:40,782] INFO in blockchain: deploy contract Auction at 0xe05b4dbef2b70c251f26752adc995c018764315e
+[2022-07-17 12:04:42,325] INFO in blockchain: call contract Auction at 0xe05b4dbef2b70c251f26752adc995c018764315e. create_auction (['123']) -> ()
+[2022-07-17 12:05:20,946] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:05:29,193] INFO in blockchain: deploy contract Auction at 0x4fb700f036dbd8a80940a88df8d9e55705a8ac97
+[2022-07-17 12:05:30,724] INFO in blockchain: call contract Auction at 0x4fb700f036dbd8a80940a88df8d9e55705a8ac97. create_auction (['123']) -> ()
+[2022-07-17 12:05:56,733] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:06:47,983] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:07:45,999] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:08:46,331] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:08:57,298] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:09:10,347] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:13:36,595] INFO in blockchain: deploy contract Auction at 0xf805cc0fdaece77cb724a36dd66047758b47c99d
+[2022-07-17 12:13:38,162] INFO in blockchain: call contract Auction at 0xf805cc0fdaece77cb724a36dd66047758b47c99d. create_auction (['123']) -> ()
+[2022-07-17 12:15:40,562] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:16:50,114] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:17:09,548] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:17:17,772] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:17:24,845] INFO in blockchain: deploy contract Auction at 0xcda895ec53a73fbc3777648cb4c87b38e252f876
+[2022-07-17 12:17:26,417] INFO in blockchain: call contract Auction at 0xcda895ec53a73fbc3777648cb4c87b38e252f876. create_auction (['123']) -> ()
+[2022-07-17 12:18:02,804] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:18:38,502] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:18:45,359] INFO in blockchain: deploy contract Auction at 0xcab316ebdfef9fd9a959171baec2bb91d9fa5481
+[2022-07-17 12:18:46,956] INFO in blockchain: call contract Auction at 0xcab316ebdfef9fd9a959171baec2bb91d9fa5481. create_auction (['123']) -> ()
+[2022-07-17 12:19:17,368] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:19:39,791] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:19:59,180] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:20:07,408] INFO in blockchain: deploy contract Auction at 0xf74c2c7131c2461db2e67362a8e7fca6dc0a66bf
+[2022-07-17 12:20:08,971] INFO in blockchain: call contract Auction at 0xf74c2c7131c2461db2e67362a8e7fca6dc0a66bf. create_auction (['123']) -> ()
+[2022-07-17 12:20:28,886] INFO in blockchain: deploy contract Auction at 0xb7a506877cd874b0dc0ed1a43762193b60a7b6d4
+[2022-07-17 12:20:30,420] INFO in blockchain: call contract Auction at 0xb7a506877cd874b0dc0ed1a43762193b60a7b6d4. create_auction (['123']) -> ()
+[2022-07-17 12:28:31,375] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:29:10,218] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:29:15,195] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:29:23,246] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:29:26,160] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 12:29:57,950] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:01:09,560] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:02:06,731] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:03:01,816] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:03:02,535] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:03:57,001] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:04:11,628] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:04:12,397] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:24:57,389] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:24:58,134] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:25:34,426] INFO in blockchain: deploy contract Auction at 0x4f74540c43035017ea8aeafb05a216821848ea9a
+[2022-07-17 13:25:35,072] INFO in blockchain: call contract Auction at 0x4f74540c43035017ea8aeafb05a216821848ea9a. create_auction (['test schduler']) -> ()
+[2022-07-17 13:28:38,825] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:28:39,539] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:45:21,041] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:45:21,756] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:46:38,700] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:46:57,107] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 13:47:20,265] INFO in blockchain: deploy contract Auction at 0x35ea6ab6035449acc289fdc313835e7c154ddb41
+[2022-07-17 13:47:21,820] INFO in blockchain: call contract Auction at 0x35ea6ab6035449acc289fdc313835e7c154ddb41. create_auction (['asdasdas']) -> ()
+[2022-07-17 13:48:13,732] INFO in blockchain: deploy contract Auction at 0x27f068b23882c2d69018e59e7e479a1db60b2ea4
+[2022-07-17 13:48:14,288] INFO in blockchain: call contract Auction at 0x27f068b23882c2d69018e59e7e479a1db60b2ea4. create_auction (['qwer']) -> ()
+[2022-07-17 13:49:02,226] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:04:04,493] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:04:05,205] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:04:30,191] INFO in blockchain: deploy contract Auction at 0x0fcbea108d0c61c519f14cfece523b9268dda5af
+[2022-07-17 14:04:30,815] INFO in blockchain: call contract Auction at 0x0fcbea108d0c61c519f14cfece523b9268dda5af. create_auction (['1']) -> ()
+[2022-07-17 14:04:42,335] INFO in blockchain: deploy contract Auction at 0x982c27fb90968f082be0fb6c606b58e79a7635fe
+[2022-07-17 14:04:42,929] INFO in blockchain: call contract Auction at 0x982c27fb90968f082be0fb6c606b58e79a7635fe. create_auction (['12']) -> ()
+[2022-07-17 14:05:41,752] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:09:03,777] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:09:04,488] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:09:27,648] INFO in blockchain: deploy contract Auction at 0x8ad46bc749a7394fbcb8a2c484ae36eafcb889ab
+[2022-07-17 14:09:28,199] INFO in blockchain: call contract Auction at 0x8ad46bc749a7394fbcb8a2c484ae36eafcb889ab. create_auction (['123']) -> ()
+[2022-07-17 14:09:38,146] INFO in blockchain: deploy contract Auction at 0x9b4f8400b726d9ecc9568f4fc3cf30343af05716
+[2022-07-17 14:09:38,687] INFO in blockchain: call contract Auction at 0x9b4f8400b726d9ecc9568f4fc3cf30343af05716. create_auction (['1234']) -> ()
+[2022-07-17 14:11:26,252] INFO in blockchain: call contract Auction at 0x8ad46bc749a7394fbcb8a2c484ae36eafcb889ab. compute_winner (None) -> ()
+[2022-07-17 14:11:26,306] INFO in blockchain: call contract Auction at 0x8ad46bc749a7394fbcb8a2c484ae36eafcb889ab. queryResult (None) -> ((('0x0000000000000000000000000000000000000000',), ('', b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'), (0,), False), 0)
+[2022-07-17 14:11:36,304] INFO in blockchain: call contract Auction at 0x9b4f8400b726d9ecc9568f4fc3cf30343af05716. compute_winner (None) -> ()
+[2022-07-17 14:11:36,350] INFO in blockchain: call contract Auction at 0x9b4f8400b726d9ecc9568f4fc3cf30343af05716. queryResult (None) -> ((('0x0000000000000000000000000000000000000000',), ('', b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'), (0,), False), 0)
+[2022-07-17 14:25:31,798] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:25:32,510] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:25:59,283] INFO in blockchain: deploy contract Auction at 0x6871e1660c0d63277d62e4965ba426ab7f580499
+[2022-07-17 14:26:28,310] WARNING in blockchain: clean databases
+[2022-07-17 14:26:28,368] WARNING in blockchain: compile all contracts
+[2022-07-17 14:26:31,005] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:26:31,734] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:27:53,919] INFO in blockchain: deploy contract Auction at 0x957c2e96a52c182caf31f3a55dd464cd2a6756d2
+[2022-07-17 14:27:54,459] INFO in blockchain: call contract Auction at 0x957c2e96a52c182caf31f3a55dd464cd2a6756d2. create_auction (['123', 1658039572, 1658039632]) -> ()
+[2022-07-17 14:29:45,788] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:30:16,523] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:31:28,463] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:32:24,820] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:33:50,590] INFO in blockchain: deploy contract Auction at 0x71441f379ac48cb8a5fbf13ae50c3d113f979a35
+[2022-07-17 14:33:51,136] INFO in blockchain: call contract Auction at 0x71441f379ac48cb8a5fbf13ae50c3d113f979a35. create_auction (['aaa', 1658039689, 1658039749]) -> ()
+[2022-07-17 14:34:54,140] INFO in blockchain: deploy contract Auction at 0xdb6f943c0bc41cbf9773f07b0417f5ba14af49e3
+[2022-07-17 14:34:54,753] INFO in blockchain: call contract Auction at 0xdb6f943c0bc41cbf9773f07b0417f5ba14af49e3. create_auction (['aaa', 1658039752, 1658039812]) -> ()
+[2022-07-17 14:35:49,636] INFO in blockchain: call contract Auction at 0x71441f379ac48cb8a5fbf13ae50c3d113f979a35. compute_winner (None) -> ()
+[2022-07-17 14:35:49,685] INFO in blockchain: call contract Auction at 0x71441f379ac48cb8a5fbf13ae50c3d113f979a35. queryResult (None) -> ((('0x0000000000000000000000000000000000000000',), ('', b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'), (0,), False), 0)
+[2022-07-17 14:36:52,599] INFO in blockchain: call contract Auction at 0xdb6f943c0bc41cbf9773f07b0417f5ba14af49e3. compute_winner (None) -> ()
+[2022-07-17 14:36:52,645] INFO in blockchain: call contract Auction at 0xdb6f943c0bc41cbf9773f07b0417f5ba14af49e3. queryResult (None) -> ((('0x0000000000000000000000000000000000000000',), ('', b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'), (0,), False), 0)
+[2022-07-17 14:39:15,087] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:39:15,807] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 14:39:40,584] INFO in blockchain: deploy contract Auction at 0x51025a2cf31a7556ca3939befc7bcd8a4815029f
+[2022-07-17 14:39:41,126] INFO in blockchain: call contract Auction at 0x51025a2cf31a7556ca3939befc7bcd8a4815029f. create_auction (['12334', 1658040279, 1658040339]) -> ()
+[2022-07-17 14:40:28,980] WARNING in blockchain: call contract Auction at 0x51025a2cf31a7556ca3939befc7bcd8a4815029f. commit ([['nonce', '0x94e6593a26bef981fe8b6a7e567e5f6020f5e057e92d09f1750811adaae695f2']]) error:RevertInstruction
+[2022-07-17 14:40:28,980] WARNING in blockchain: receipt: {'blockHash': '0xc34f539e356520a4c5b1d64d4e49dc3d6f24a75ad6a76bf629b408d82e19353d', 'blockNumber': '0x13f', 'contractAddress': '0x0000000000000000000000000000000000000000', 'from': '0x6a3b1067bbc47fb7664c13bdd50f945425c67cc7', 'gasUsed': '0x67d0', 'input': '0xf4135b130000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000004094e6593a26bef981fe8b6a7e567e5f6020f5e057e92d09f1750811adaae695f200000000000000000000000000000000000000000000000000000000000000056e6f6e6365000000000000000000000000000000000000000000000000000000', 'logs': [], 'logsBloom': '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000', 'output': '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000b74696d65206572726f7230000000000000000000000000000000000000000000', 'remainGas': '0x0', 'root': '0x0000000000000000000000000000000000000000000000000000000000000000', 'status': '0x16', 'statusMsg': 'RevertInstruction', 'to': '0x51025a2cf31a7556ca3939befc7bcd8a4815029f', 'transactionHash': '0xe73b4063ee5559b9ff86d185bb659548bcb091253b7afd27fb37edc61a1fc8c6', 'transactionIndex': '0x0'}
+[2022-07-17 14:45:39,283] INFO in blockchain: call contract Auction at 0x51025a2cf31a7556ca3939befc7bcd8a4815029f. compute_winner (None) -> ()
+[2022-07-17 14:45:39,334] INFO in blockchain: call contract Auction at 0x51025a2cf31a7556ca3939befc7bcd8a4815029f. queryResult (None) -> ((('0x0000000000000000000000000000000000000000',), ('', b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'), (0,), False), 0)
+[2022-07-17 14:57:44,036] INFO in blockchain: deploy contract Auction at 0xebde045995efbda0c5749e436c6b31387495f91d
+[2022-07-17 14:57:44,638] INFO in blockchain: call contract Auction at 0xebde045995efbda0c5749e436c6b31387495f91d. create_auction (['item for test', 1658041124, 1658041184]) -> ()
+[2022-07-17 14:57:45,170] INFO in blockchain: call contract Auction at 0xebde045995efbda0c5749e436c6b31387495f91d. commit ([['nonce', '0x94e6593a26bef981fe8b6a7e567e5f6020f5e057e92d09f1750811adaae695f2']]) -> error
+[2022-07-17 14:57:45,708] INFO in blockchain: call contract Auction at 0xebde045995efbda0c5749e436c6b31387495f91d. commit ([['nonce', '0x1f88c8d26d3e9a7ef8d4401e3088092d5841e1cc6da2b8714146695143c21d74']]) -> error
+[2022-07-17 14:57:46,240] INFO in blockchain: call contract Auction at 0xebde045995efbda0c5749e436c6b31387495f91d. commit ([['nonce', '0xd04acb2b42e4d4fa87458720f0f0e8adceca48376585993b0cde7515f9345202']]) -> error
+[2022-07-17 14:57:46,771] INFO in blockchain: call contract Auction at 0xebde045995efbda0c5749e436c6b31387495f91d. reveal ([[100]]) -> error
+[2022-07-17 14:57:47,301] INFO in blockchain: call contract Auction at 0xebde045995efbda0c5749e436c6b31387495f91d. reveal ([[200]]) -> error
+[2022-07-17 14:57:47,822] INFO in blockchain: call contract Auction at 0xebde045995efbda0c5749e436c6b31387495f91d. reveal ([[300]]) -> error
+[2022-07-17 14:57:47,919] INFO in blockchain: call contract Auction at 0xebde045995efbda0c5749e436c6b31387495f91d. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), ('nonce', b'\x94\xe6Y:&\xbe\xf9\x81\xfe\x8bj~V~_` \xf5\xe0W\xe9-\t\xf1u\x08\x11\xad\xaa\xe6\x95\xf2'), (100,), False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), ('nonce', b'\x1f\x88\xc8\xd2m>\x9a~\xf8\xd4@\x1e0\x88\t-XA\xe1\xccm\xa2\xb8qAFiQC\xc2\x1dt'), (200,), False), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), ('nonce', b'\xd0J\xcb+B\xe4\xd4\xfa\x87E\x87 \xf0\xf0\xe8\xad\xce\xcaH7e\x85\x99;\x0c\xdeu\x15\xf94R\x02'), (300,), False)),)
+[2022-07-17 14:57:48,393] INFO in blockchain: call contract Auction at 0xebde045995efbda0c5749e436c6b31387495f91d. compute_winner (None) -> ()
+[2022-07-17 14:57:48,482] INFO in blockchain: call contract Auction at 0xebde045995efbda0c5749e436c6b31387495f91d. queryResult (None) -> ((('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), ('nonce', b'\xd0J\xcb+B\xe4\xd4\xfa\x87E\x87 \xf0\xf0\xe8\xad\xce\xcaH7e\x85\x99;\x0c\xdeu\x15\xf94R\x02'), (300,), False), 200)
+[2022-07-17 14:59:46,922] INFO in blockchain: deploy contract Auction at 0xd2cdddab43afb0bc85ecc0d1b2fdf7ff60086a56
+[2022-07-17 14:59:47,469] INFO in blockchain: call contract Auction at 0xd2cdddab43afb0bc85ecc0d1b2fdf7ff60086a56. create_auction (['item for test', 1658041246, 1658041306]) -> ()
+[2022-07-17 14:59:47,783] WARNING in blockchain: call contract Auction at 0xd2cdddab43afb0bc85ecc0d1b2fdf7ff60086a56. commit ([['nonce', '0x94e6593a26bef981fe8b6a7e567e5f6020f5e057e92d09f1750811adaae695f2']]) error:RevertInstruction
+[2022-07-17 14:59:47,784] WARNING in blockchain: receipt: {'blockHash': '0x8653d61a8d61017565cec8a4cafae882bdb141e9dd5005bb283b1b98fd2a2e1c', 'blockNumber': '0x14c', 'contractAddress': '0x0000000000000000000000000000000000000000', 'from': '0x4d62824c11c131b24060e147cd42dcd2ce55ba47', 'gasUsed': '0x6a7b', 'input': '0xf4135b130000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000004094e6593a26bef981fe8b6a7e567e5f6020f5e057e92d09f1750811adaae695f200000000000000000000000000000000000000000000000000000000000000056e6f6e6365000000000000000000000000000000000000000000000000000000', 'logs': [], 'logsBloom': '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000', 'output': '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000b74696d65206572726f7230000000000000000000000000000000000000000000', 'remainGas': '0x0', 'root': '0x0000000000000000000000000000000000000000000000000000000000000000', 'status': '0x16', 'statusMsg': 'RevertInstruction', 'to': '0xd2cdddab43afb0bc85ecc0d1b2fdf7ff60086a56', 'transactionHash': '0x427310503d861c65257a964c07615e3bb8183953a46b9724e0dc002cdf1bd768', 'transactionIndex': '0x0'}
+[2022-07-17 15:00:45,877] INFO in blockchain: deploy contract Auction at 0x2e528dcc64810fd622852959ad14e39b97b0ea5b
+[2022-07-17 15:00:46,457] INFO in blockchain: call contract Auction at 0x2e528dcc64810fd622852959ad14e39b97b0ea5b. create_auction (['item for test', 1658041305, 1658041365]) -> ()
+[2022-07-17 15:00:46,782] WARNING in blockchain: call contract Auction at 0x2e528dcc64810fd622852959ad14e39b97b0ea5b. commit ([['nonce', '0x94e6593a26bef981fe8b6a7e567e5f6020f5e057e92d09f1750811adaae695f2']]) error:RevertInstruction
+[2022-07-17 15:00:46,782] WARNING in blockchain: receipt: {'blockHash': '0x24e14c2cd33c7b7d4d5c576237a9eb169101ac39a8b43f8022a3586b0d785e76', 'blockNumber': '0x14f', 'contractAddress': '0x0000000000000000000000000000000000000000', 'from': '0x4d62824c11c131b24060e147cd42dcd2ce55ba47', 'gasUsed': '0x6a7b', 'input': '0xf4135b130000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000004094e6593a26bef981fe8b6a7e567e5f6020f5e057e92d09f1750811adaae695f200000000000000000000000000000000000000000000000000000000000000056e6f6e6365000000000000000000000000000000000000000000000000000000', 'logs': [], 'logsBloom': '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000', 'output': '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000b74696d65206572726f7230000000000000000000000000000000000000000000', 'remainGas': '0x0', 'root': '0x0000000000000000000000000000000000000000000000000000000000000000', 'status': '0x16', 'statusMsg': 'RevertInstruction', 'to': '0x2e528dcc64810fd622852959ad14e39b97b0ea5b', 'transactionHash': '0x5ca3d34d73b911d58b4c10ad1f20a232cbd2f2c1d440aa9f49d460867ad3a3ca', 'transactionIndex': '0x0'}
+[2022-07-17 15:01:19,782] INFO in blockchain: deploy contract Auction at 0xec9d7d3e8205edd5004c0f785394d099e1b2e523
+[2022-07-17 15:01:20,322] INFO in blockchain: call contract Auction at 0xec9d7d3e8205edd5004c0f785394d099e1b2e523. create_auction (['item for test', 1658041339, 1658041399]) -> ()
+[2022-07-17 15:01:20,827] INFO in blockchain: call contract Auction at 0xec9d7d3e8205edd5004c0f785394d099e1b2e523. commit ([['nonce', '0x94e6593a26bef981fe8b6a7e567e5f6020f5e057e92d09f1750811adaae695f2']]) -> error
+[2022-07-17 15:01:21,358] INFO in blockchain: call contract Auction at 0xec9d7d3e8205edd5004c0f785394d099e1b2e523. commit ([['nonce', '0x1f88c8d26d3e9a7ef8d4401e3088092d5841e1cc6da2b8714146695143c21d74']]) -> error
+[2022-07-17 15:01:21,887] INFO in blockchain: call contract Auction at 0xec9d7d3e8205edd5004c0f785394d099e1b2e523. commit ([['nonce', '0xd04acb2b42e4d4fa87458720f0f0e8adceca48376585993b0cde7515f9345202']]) -> error
+[2022-07-17 15:02:22,223] INFO in blockchain: call contract Auction at 0xec9d7d3e8205edd5004c0f785394d099e1b2e523. reveal ([[100]]) -> error
+[2022-07-17 15:02:22,747] INFO in blockchain: call contract Auction at 0xec9d7d3e8205edd5004c0f785394d099e1b2e523. reveal ([[200]]) -> error
+[2022-07-17 15:02:23,273] INFO in blockchain: call contract Auction at 0xec9d7d3e8205edd5004c0f785394d099e1b2e523. reveal ([[300]]) -> error
+[2022-07-17 15:02:23,297] INFO in blockchain: call contract Auction at 0xec9d7d3e8205edd5004c0f785394d099e1b2e523. queryAllBidders (None) -> (((('0x4d62824c11c131b24060e147cd42dcd2ce55ba47',), ('nonce', b'\x94\xe6Y:&\xbe\xf9\x81\xfe\x8bj~V~_` \xf5\xe0W\xe9-\t\xf1u\x08\x11\xad\xaa\xe6\x95\xf2'), (100,), False), (('0xed6554ce1a604ef25d3bf72e55e7b9ceef6012f6',), ('nonce', b'\x1f\x88\xc8\xd2m>\x9a~\xf8\xd4@\x1e0\x88\t-XA\xe1\xccm\xa2\xb8qAFiQC\xc2\x1dt'), (200,), False), (('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), ('nonce', b'\xd0J\xcb+B\xe4\xd4\xfa\x87E\x87 \xf0\xf0\xe8\xad\xce\xcaH7e\x85\x99;\x0c\xdeu\x15\xf94R\x02'), (300,), False)),)
+[2022-07-17 15:02:23,794] INFO in blockchain: call contract Auction at 0xec9d7d3e8205edd5004c0f785394d099e1b2e523. compute_winner (None) -> ()
+[2022-07-17 15:02:23,847] INFO in blockchain: call contract Auction at 0xec9d7d3e8205edd5004c0f785394d099e1b2e523. queryResult (None) -> ((('0x27af5971dbae6f37b4bab066fc01b580ead82bdc',), ('nonce', b'\xd0J\xcb+B\xe4\xd4\xfa\x87E\x87 \xf0\xf0\xe8\xad\xce\xcaH7e\x85\x99;\x0c\xdeu\x15\xf94R\x02'), (300,), False), 200)
+[2022-07-17 15:21:45,759] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 15:22:05,398] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 15:22:06,134] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 15:22:28,645] INFO in blockchain: deploy contract Auction at 0xa96c99ee0eb276aeb315d3747f1379f5729fd83d
+[2022-07-17 15:22:29,209] INFO in blockchain: call contract Auction at 0xa96c99ee0eb276aeb315d3747f1379f5729fd83d. create_auction (['123', 1658042847, 1658042907]) -> ()
+[2022-07-17 15:22:52,985] INFO in blockchain: call contract Auction at 0xa96c99ee0eb276aeb315d3747f1379f5729fd83d. commit ([['nonce', '0x94e6593a26bef981fe8b6a7e567e5f6020f5e057e92d09f1750811adaae695f2']]) -> error
+[2022-07-17 15:23:36,114] INFO in blockchain: call contract Auction at 0xa96c99ee0eb276aeb315d3747f1379f5729fd83d. commit ([['nonce', '0x1f88c8d26d3e9a7ef8d4401e3088092d5841e1cc6da2b8714146695143c21d74']]) -> error
+[2022-07-17 15:24:09,870] INFO in blockchain: call contract Auction at 0xa96c99ee0eb276aeb315d3747f1379f5729fd83d. commit ([['nonce', '0xd04acb2b42e4d4fa87458720f0f0e8adceca48376585993b0cde7515f9345202']]) -> error
+[2022-07-17 15:28:27,315] INFO in blockchain: call contract Auction at 0xa96c99ee0eb276aeb315d3747f1379f5729fd83d. compute_winner (None) -> ()
+[2022-07-17 15:28:27,370] INFO in blockchain: call contract Auction at 0xa96c99ee0eb276aeb315d3747f1379f5729fd83d. queryResult (None) -> ((('0x0000000000000000000000000000000000000000',), ('', b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'), (0,), False), 0)
+[2022-07-17 15:30:38,527] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 15:38:47,538] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 15:38:48,297] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 15:39:12,537] INFO in blockchain: deploy contract Auction at 0x72d450cb6623b9b26e67c2c26c1c542d9f6b027f
+[2022-07-17 15:39:13,090] INFO in blockchain: call contract Auction at 0x72d450cb6623b9b26e67c2c26c1c542d9f6b027f. create_auction (['1234', 1658043731, 1658043791]) -> ()
+[2022-07-17 15:39:50,138] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 15:41:16,443] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 15:41:25,634] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 15:41:49,715] INFO in blockchain: call contract Auction at 0x72d450cb6623b9b26e67c2c26c1c542d9f6b027f. commit ([['bidder0', '0x0737167891e73c85816d02ad941c83004c6bcd9ebff47f84b491d24b648d54c6']]) -> error
+[2022-07-17 15:42:11,847] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 15:42:34,520] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 15:42:56,554] INFO in blockchain: deploy contract Auction at 0x1169950736ead68cb9b0ef0a337a2636e01872f7
+[2022-07-17 15:42:57,211] INFO in blockchain: call contract Auction at 0x1169950736ead68cb9b0ef0a337a2636e01872f7. create_auction (['123', 1658043954, 1658044014]) -> ()
+[2022-07-17 15:43:49,067] INFO in blockchain: call contract Auction at 0x1169950736ead68cb9b0ef0a337a2636e01872f7. commit ([['bidder0', '0x0737167891e73c85816d02ad941c83004c6bcd9ebff47f84b491d24b648d54c6']]) -> error
+[2022-07-17 15:44:14,976] INFO in blockchain: call contract Auction at 0x1169950736ead68cb9b0ef0a337a2636e01872f7. commit ([['bidder1', '0xe8351a80b7067c541b28644a1d2120a8782c8e1220514a4ab5aa87d7774e8763']]) -> error
+[2022-07-17 15:45:19,881] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 15:45:37,222] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 15:45:51,444] INFO in app: starting server at 0.0.0.0:8888 (debug=True)
+[2022-07-17 15:46:14,283] INFO in blockchain: deploy contract Auction at 0xb0685c5b320c5af07dfb1fa958c402e4aaa010cc
+[2022-07-17 15:46:14,883] INFO in blockchain: call contract Auction at 0xb0685c5b320c5af07dfb1fa958c402e4aaa010cc. create_auction (['123', 1658044272, 1658044332]) -> ()
+[2022-07-17 15:46:41,988] INFO in blockchain: call contract Auction at 0xb0685c5b320c5af07dfb1fa958c402e4aaa010cc. commit ([['bidder0', '0x0737167891e73c85816d02ad941c83004c6bcd9ebff47f84b491d24b648d54c6']]) -> error
+[2022-07-17 15:47:11,761] INFO in blockchain: call contract Auction at 0xb0685c5b320c5af07dfb1fa958c402e4aaa010cc. commit ([['bidder1', '0xe8351a80b7067c541b28644a1d2120a8782c8e1220514a4ab5aa87d7774e8763']]) -> error
+[2022-07-17 15:47:46,566] INFO in blockchain: call contract Auction at 0xb0685c5b320c5af07dfb1fa958c402e4aaa010cc. commit ([['bidder2', '0x7d8ccfaed95f4bfbd95acf76b461d53fc2a5ea9d8bf83322724eb187a7ced89b']]) -> error
+[2022-07-17 15:51:24,652] INFO in blockchain: call contract Auction at 0xb0685c5b320c5af07dfb1fa958c402e4aaa010cc. reveal ([[100]]) -> error
+[2022-07-17 15:51:35,291] INFO in blockchain: call contract Auction at 0xb0685c5b320c5af07dfb1fa958c402e4aaa010cc. reveal ([[200]]) -> error
+[2022-07-17 15:51:56,232] INFO in blockchain: call contract Auction at 0xb0685c5b320c5af07dfb1fa958c402e4aaa010cc. reveal ([[300]]) -> error
+[2022-07-17 15:52:12,307] INFO in blockchain: call contract Auction at 0xb0685c5b320c5af07dfb1fa958c402e4aaa010cc. compute_winner (None) -> ()
+[2022-07-17 15:52:12,349] INFO in blockchain: call contract Auction at 0xb0685c5b320c5af07dfb1fa958c402e4aaa010cc. queryResult (None) -> ((('0x4deaa49a7768d3ebda85fad301d393fd2f71b10e',), ('bidder2', b'}\x8c\xcf\xae\xd9_K\xfb\xd9Z\xcfv\xb4a\xd5?\xc2\xa5\xea\x9d\x8b\xf83"rN\xb1\x87\xa7\xce\xd8\x9b'), (300,), False), 200)
+[2022-07-17 15:59:54,663] INFO in app: starting server at 0.0.0.0:8080 (debug=False)
+[2022-07-17 16:01:29,581] ERROR in app: Exception on /user/signin [POST]
+Traceback (most recent call last):
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: users.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/rookita/Auction/auction.py", line 49, in signin
+    db.session.commit()
+  File "<string>", line 2, in commit
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1451, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 829, in commit
+    self._prepare_impl()
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 3383, in flush
+    self._flush(objects)
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 3523, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 3483, in _flush
+    flush_context.execute()
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/unitofwork.py", line 633, in execute
+    uow,
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 250, in save_obj
+    insert,
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1098, in _emit_insert_statements
+    statement, multiparams, execution_options=execution_options
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 333, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1508, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1863, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2044, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: users.username
+[SQL: INSERT INTO users (username, password, address) VALUES (?, ?, ?)]
+[parameters: ('123456', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', '0x671bc4f2BB6d83BA3c66d57637633878049132Cf')]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+[2022-07-17 16:01:29,971] ERROR in app: Exception on /user/signin [POST]
+Traceback (most recent call last):
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: users.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/rookita/Auction/auction.py", line 49, in signin
+    db.session.commit()
+  File "<string>", line 2, in commit
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1451, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 829, in commit
+    self._prepare_impl()
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 3383, in flush
+    self._flush(objects)
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 3523, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 72, in __exit__
+    with_traceback=exc_tb,
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 3483, in _flush
+    flush_context.execute()
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/unitofwork.py", line 633, in execute
+    uow,
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 250, in save_obj
+    insert,
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1098, in _emit_insert_statements
+    statement, multiparams, execution_options=execution_options
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 333, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1508, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1863, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2044, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 208, in raise_
+    raise exception
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1820, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: users.username
+[SQL: INSERT INTO users (username, password, address) VALUES (?, ?, ?)]
+[parameters: ('123456', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', '0x623a88bab6Fc69D0197E3eeEd6b76ed29B3c2247')]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+[2022-07-17 16:02:38,349] INFO in blockchain: deploy contract Auction at 0xbfdbf2def9351624db8de5e5e7d34894c15ffb02
+[2022-07-17 16:02:38,967] INFO in blockchain: call contract Auction at 0xbfdbf2def9351624db8de5e5e7d34894c15ffb02. create_auction (['item', 1658045256, 1658045316]) -> ()
+[2022-07-17 16:03:36,950] INFO in blockchain: call contract Auction at 0xbfdbf2def9351624db8de5e5e7d34894c15ffb02. commit ([['123', '0xc8f04be6817b1d2eec73fd660b2db6139a34b0e973f00a8e7f6bcde672b066b0']]) -> error
+[2022-07-17 16:04:05,813] INFO in blockchain: call contract Auction at 0xbfdbf2def9351624db8de5e5e7d34894c15ffb02. commit ([['bidder1', '0xe8351a80b7067c541b28644a1d2120a8782c8e1220514a4ab5aa87d7774e8763']]) -> error
+[2022-07-17 16:04:42,684] INFO in blockchain: call contract Auction at 0xbfdbf2def9351624db8de5e5e7d34894c15ffb02. commit ([['nonce', '0xd04acb2b42e4d4fa87458720f0f0e8adceca48376585993b0cde7515f9345202']]) -> error
+[2022-07-17 16:05:03,805] ERROR in app: Exception on /Auctions/35 [GET]
+Traceback (most recent call last):
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/rookita/Auction/auction.py", line 113, in auction_info
+    username = session['username']
+  File "/home/rookita/.pyenv/versions/python-sdk/lib/python3.7/site-packages/flask/sessions.py", line 79, in __getitem__
+    return super().__getitem__(key)
+KeyError: 'username'
+[2022-07-17 16:07:43,577] INFO in blockchain: call contract Auction at 0xbfdbf2def9351624db8de5e5e7d34894c15ffb02. reveal ([[300]]) -> error
+[2022-07-17 16:08:04,270] INFO in blockchain: call contract Auction at 0xbfdbf2def9351624db8de5e5e7d34894c15ffb02. reveal ([[100]]) -> error
+[2022-07-17 16:08:05,809] INFO in blockchain: call contract Auction at 0xbfdbf2def9351624db8de5e5e7d34894c15ffb02. reveal ([[200]]) -> error
+[2022-07-17 16:08:36,565] INFO in blockchain: call contract Auction at 0xbfdbf2def9351624db8de5e5e7d34894c15ffb02. compute_winner (None) -> ()
+[2022-07-17 16:08:36,610] INFO in blockchain: call contract Auction at 0xbfdbf2def9351624db8de5e5e7d34894c15ffb02. queryResult (None) -> ((('0x408623a314606c23a0695c1e698cfd9bfa910f22',), ('nonce', b'\xd0J\xcb+B\xe4\xd4\xfa\x87E\x87 \xf0\xf0\xe8\xad\xce\xcaH7e\x85\x99;\x0c\xdeu\x15\xf94R\x02'), (300,), False), 200)
+[2022-07-17 16:17:09,516] INFO in app: starting server at 0.0.0.0:8080 (debug=False)
+[2022-07-17 18:21:25,937] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:21:26,657] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:22:34,599] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:22:35,338] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:24:01,791] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:24:10,984] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:24:12,924] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:24:15,084] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:24:21,125] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:24:29,284] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:24:45,584] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:25:04,168] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:25:21,447] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:25:34,624] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:25:43,692] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:26:08,266] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:26:17,353] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:26:33,684] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:27:05,410] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:28:37,712] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:29:32,073] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:32:15,021] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:32:53,893] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:32:55,836] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:33:35,713] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:33:51,896] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:34:12,644] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:34:28,908] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:34:40,042] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:34:52,196] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:35:01,321] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:35:04,422] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:35:10,439] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:35:33,131] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 18:49:32,967] INFO in blockchain: deploy contract Auction at 0x00a0d2935efa2769fae86cb043025a900efcaa63
+[2022-07-17 18:49:33,527] INFO in blockchain: call contract Auction at 0x00a0d2935efa2769fae86cb043025a900efcaa63. create_auction (['123', 1658055091, 1658055151]) -> ()
+[2022-07-17 18:50:27,474] INFO in blockchain: call contract Auction at 0x00a0d2935efa2769fae86cb043025a900efcaa63. commit ([['', '0x70147d9c3fe0b99a2ec9f2cbd549e637cb54c230e2bc7e6fb34b629ebe04272a']]) -> error
+[2022-07-17 18:52:30,312] INFO in blockchain: call contract Auction at 0x00a0d2935efa2769fae86cb043025a900efcaa63. reveal ([[100]]) -> error
+[2022-07-17 18:52:31,263] INFO in blockchain: call contract Auction at 0x00a0d2935efa2769fae86cb043025a900efcaa63. compute_winner (None) -> ()
+[2022-07-17 18:52:31,290] INFO in blockchain: call contract Auction at 0x00a0d2935efa2769fae86cb043025a900efcaa63. queryResult (None) -> ((('0x6a3b1067bbc47fb7664c13bdd50f945425c67cc7',), ('', b"p\x14}\x9c?\xe0\xb9\x9a.\xc9\xf2\xcb\xd5I\xe67\xcbT\xc20\xe2\xbc~o\xb3Kb\x9e\xbe\x04'*"), (100,), False), 0)
+[2022-07-17 19:10:44,648] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:10:45,447] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:15:02,476] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:33:27,169] WARNING in blockchain: clean databases
+[2022-07-17 19:33:27,223] WARNING in blockchain: compile all contracts
+[2022-07-17 19:33:32,717] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:33:33,410] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:34:23,488] INFO in blockchain: deploy contract Auction at 0x02d3275095bf07e2b0ecb07f03d6700d8f5f93d9
+[2022-07-17 19:34:24,029] INFO in blockchain: call contract Auction at 0x02d3275095bf07e2b0ecb07f03d6700d8f5f93d9. create_auction (['item0', 1658057962, 1658058022]) -> ()
+[2022-07-17 19:34:36,599] INFO in blockchain: deploy contract Auction at 0xd408c2421eaff6c1f1f1f9db51ecd0d1eb005f70
+[2022-07-17 19:34:37,151] INFO in blockchain: call contract Auction at 0xd408c2421eaff6c1f1f1f9db51ecd0d1eb005f70. create_auction (['item1', 1658057974, 1658058034]) -> ()
+[2022-07-17 19:36:00,775] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:36:01,488] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:36:31,930] INFO in blockchain: call contract Auction at 0x02d3275095bf07e2b0ecb07f03d6700d8f5f93d9. commit ([['bidder0', '0x0737167891e73c85816d02ad941c83004c6bcd9ebff47f84b491d24b648d54c6']]) -> error
+[2022-07-17 19:36:40,313] WARNING in blockchain: call contract Auction at 0x02d3275095bf07e2b0ecb07f03d6700d8f5f93d9. commit ([['bidder0', '0x0737167891e73c85816d02ad941c83004c6bcd9ebff47f84b491d24b648d54c6']]) error:RevertInstruction
+[2022-07-17 19:36:40,314] WARNING in blockchain: receipt: {'blockHash': '0x755dea494c7fa66f727fd071bb9dc21cbdb22da602b63853c56e71e8536edb2b', 'blockNumber': '0x182', 'contractAddress': '0x0000000000000000000000000000000000000000', 'from': '0xc4bdba998ef183df81079a306e93554c61e1b7f0', 'gasUsed': '0x6b6f', 'input': '0xf4135b13000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000400737167891e73c85816d02ad941c83004c6bcd9ebff47f84b491d24b648d54c600000000000000000000000000000000000000000000000000000000000000076269646465723000000000000000000000000000000000000000000000000000', 'logs': [], 'logsBloom': '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000', 'output': '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d636f6d6d6974206572726f722100000000000000000000000000000000000000', 'remainGas': '0x0', 'root': '0x0000000000000000000000000000000000000000000000000000000000000000', 'status': '0x16', 'statusMsg': 'RevertInstruction', 'to': '0x02d3275095bf07e2b0ecb07f03d6700d8f5f93d9', 'transactionHash': '0x0981240b27f377fabdd35b4f555a02e260a7bf8fdd05f0ec0544629c81aa01d9', 'transactionIndex': '0x0'}
+[2022-07-17 19:37:18,653] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:37:27,296] WARNING in blockchain: clean databases
+[2022-07-17 19:37:27,364] WARNING in blockchain: compile all contracts
+[2022-07-17 19:37:54,001] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:38:17,772] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:38:18,486] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:38:52,941] INFO in blockchain: deploy contract Auction at 0x0a0386007d5a271bd66278ddf071bf790bc417ae
+[2022-07-17 19:38:53,484] INFO in blockchain: call contract Auction at 0x0a0386007d5a271bd66278ddf071bf790bc417ae. create_auction (['item0', 1658058171, 1658058231]) -> ()
+[2022-07-17 19:39:28,213] INFO in blockchain: call contract Auction at 0x0a0386007d5a271bd66278ddf071bf790bc417ae. commit ([['bidder0', '0x0737167891e73c85816d02ad941c83004c6bcd9ebff47f84b491d24b648d54c6']]) -> error
+[2022-07-17 19:40:15,076] INFO in blockchain: call contract Auction at 0x0a0386007d5a271bd66278ddf071bf790bc417ae. commit ([['bidder1', '0xe8351a80b7067c541b28644a1d2120a8782c8e1220514a4ab5aa87d7774e8763']]) -> error
+[2022-07-17 19:40:53,901] INFO in blockchain: call contract Auction at 0x0a0386007d5a271bd66278ddf071bf790bc417ae. commit ([['bidder2', '0x7d8ccfaed95f4bfbd95acf76b461d53fc2a5ea9d8bf83322724eb187a7ced89b']]) -> error
+[2022-07-17 19:43:19,457] INFO in blockchain: call contract Auction at 0x0a0386007d5a271bd66278ddf071bf790bc417ae. reveal ([[300]]) -> error
+[2022-07-17 19:43:25,280] INFO in blockchain: call contract Auction at 0x0a0386007d5a271bd66278ddf071bf790bc417ae. reveal ([[100]]) -> error
+[2022-07-17 19:43:41,279] INFO in blockchain: call contract Auction at 0x0a0386007d5a271bd66278ddf071bf790bc417ae. reveal ([[200]]) -> error
+[2022-07-17 19:43:51,250] INFO in blockchain: call contract Auction at 0x0a0386007d5a271bd66278ddf071bf790bc417ae. compute_winner (None) -> ()
+[2022-07-17 19:43:51,302] INFO in blockchain: call contract Auction at 0x0a0386007d5a271bd66278ddf071bf790bc417ae. queryResult (None) -> ((('0x1f05ba5b456e96a493ce351270afaed0596a0d6f',), ('bidder2', b'}\x8c\xcf\xae\xd9_K\xfb\xd9Z\xcfv\xb4a\xd5?\xc2\xa5\xea\x9d\x8b\xf83"rN\xb1\x87\xa7\xce\xd8\x9b'), (300,), False), 200)
+[2022-07-17 19:46:27,981] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:49:21,155] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:49:48,283] INFO in blockchain: deploy contract Auction at 0xde5ff3f3018cee70f2697374dc8aa052e87019cf
+[2022-07-17 19:49:48,833] INFO in blockchain: call contract Auction at 0xde5ff3f3018cee70f2697374dc8aa052e87019cf. create_auction (['item1', 1658058766, 1658058826]) -> ()
+[2022-07-17 19:50:12,505] INFO in blockchain: call contract Auction at 0xde5ff3f3018cee70f2697374dc8aa052e87019cf. commit ([['bidder0', '0x0737167891e73c85816d02ad941c83004c6bcd9ebff47f84b491d24b648d54c6']]) -> error
+[2022-07-17 19:50:38,206] INFO in blockchain: call contract Auction at 0xde5ff3f3018cee70f2697374dc8aa052e87019cf. commit ([['bidder1', '0xe8351a80b7067c541b28644a1d2120a8782c8e1220514a4ab5aa87d7774e8763']]) -> error
+[2022-07-17 19:51:02,894] INFO in blockchain: call contract Auction at 0xde5ff3f3018cee70f2697374dc8aa052e87019cf. commit ([['bidder2', '0x7d8ccfaed95f4bfbd95acf76b461d53fc2a5ea9d8bf83322724eb187a7ced89b']]) -> error
+[2022-07-17 19:52:48,306] INFO in blockchain: call contract Auction at 0xde5ff3f3018cee70f2697374dc8aa052e87019cf. reveal ([[300]]) -> error
+[2022-07-17 19:53:09,239] INFO in blockchain: call contract Auction at 0xde5ff3f3018cee70f2697374dc8aa052e87019cf. reveal ([[200]]) -> error
+[2022-07-17 19:53:27,240] INFO in blockchain: call contract Auction at 0xde5ff3f3018cee70f2697374dc8aa052e87019cf. reveal ([[100]]) -> error
+[2022-07-17 19:53:46,270] INFO in blockchain: call contract Auction at 0xde5ff3f3018cee70f2697374dc8aa052e87019cf. compute_winner (None) -> ()
+[2022-07-17 19:53:46,328] INFO in blockchain: call contract Auction at 0xde5ff3f3018cee70f2697374dc8aa052e87019cf. queryResult (None) -> ((('0x1f05ba5b456e96a493ce351270afaed0596a0d6f',), ('bidder2', b'}\x8c\xcf\xae\xd9_K\xfb\xd9Z\xcfv\xb4a\xd5?\xc2\xa5\xea\x9d\x8b\xf83"rN\xb1\x87\xa7\xce\xd8\x9b'), (300,), False), 200)
+[2022-07-17 19:56:40,687] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:57:03,967] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 19:57:25,444] INFO in blockchain: deploy contract Auction at 0xaa8c9a7be0ec51c2cb9d9cd546ac200953568077
+[2022-07-17 19:57:26,004] INFO in blockchain: call contract Auction at 0xaa8c9a7be0ec51c2cb9d9cd546ac200953568077. create_auction (['item1', 1658059103, 1658059163]) -> ()
+[2022-07-17 19:57:50,717] INFO in blockchain: call contract Auction at 0xaa8c9a7be0ec51c2cb9d9cd546ac200953568077. commit ([['bidder1', '0xf2971cc863ced70a2c930decf7d49c8220cdb9be0c60d9c03eda14fb0d366c54']]) -> error
+[2022-07-17 19:58:32,508] INFO in blockchain: call contract Auction at 0xaa8c9a7be0ec51c2cb9d9cd546ac200953568077. reveal ([[100]]) -> error
+[2022-07-17 19:59:23,450] INFO in blockchain: call contract Auction at 0xaa8c9a7be0ec51c2cb9d9cd546ac200953568077. compute_winner (None) -> ()
+[2022-07-17 19:59:23,502] INFO in blockchain: call contract Auction at 0xaa8c9a7be0ec51c2cb9d9cd546ac200953568077. queryResult (None) -> ((('0xcdabf114daf0b822ed246301df3f24454e75d702',), ('bidder1', b'\xf2\x97\x1c\xc8c\xce\xd7\n,\x93\r\xec\xf7\xd4\x9c\x82 \xcd\xb9\xbe\x0c`\xd9\xc0>\xda\x14\xfb\r6lT'), (100,), False), 0)
+[2022-07-17 20:00:19,972] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 20:01:11,351] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 20:02:21,919] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 20:02:22,649] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 20:02:49,245] INFO in blockchain: deploy contract Auction at 0x727a51ab3737ca2e01fc501415b9991175b657be
+[2022-07-17 20:02:49,799] INFO in blockchain: call contract Auction at 0x727a51ab3737ca2e01fc501415b9991175b657be. create_auction (['item2', 1658059427, 1658059487]) -> ()
+[2022-07-17 20:03:10,438] INFO in blockchain: call contract Auction at 0x727a51ab3737ca2e01fc501415b9991175b657be. commit ([['bidder0', '0x0737167891e73c85816d02ad941c83004c6bcd9ebff47f84b491d24b648d54c6']]) -> error
+[2022-07-17 20:03:54,272] INFO in blockchain: call contract Auction at 0x727a51ab3737ca2e01fc501415b9991175b657be. reveal ([[100]]) -> error
+[2022-07-17 20:04:47,250] INFO in blockchain: call contract Auction at 0x727a51ab3737ca2e01fc501415b9991175b657be. compute_winner (None) -> ()
+[2022-07-17 20:04:47,297] INFO in blockchain: call contract Auction at 0x727a51ab3737ca2e01fc501415b9991175b657be. queryResult (None) -> ((('0xcdabf114daf0b822ed246301df3f24454e75d702',), ('bidder0', b'\x077\x16x\x91\xe7<\x85\x81m\x02\xad\x94\x1c\x83\x00Lk\xcd\x9e\xbf\xf4\x7f\x84\xb4\x91\xd2Kd\x8dT\xc6'), (100,), False), 0)
+[2022-07-17 20:10:19,204] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 20:10:19,883] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-17 20:10:40,153] INFO in blockchain: deploy contract Auction at 0xa1afb95f54ca25dabf7874036c1da49c4d81f1d9
+[2022-07-17 20:10:40,731] INFO in blockchain: call contract Auction at 0xa1afb95f54ca25dabf7874036c1da49c4d81f1d9. create_auction (['item3', 1658059898, 1658059958]) -> ()
+[2022-07-17 20:11:05,747] INFO in blockchain: call contract Auction at 0xa1afb95f54ca25dabf7874036c1da49c4d81f1d9. commit ([['bidder1', '0xf2971cc863ced70a2c930decf7d49c8220cdb9be0c60d9c03eda14fb0d366c54']]) -> error
+[2022-07-17 20:11:47,594] INFO in blockchain: call contract Auction at 0xa1afb95f54ca25dabf7874036c1da49c4d81f1d9. reveal ([[100]]) -> error
+[2022-07-17 20:12:38,533] INFO in blockchain: call contract Auction at 0xa1afb95f54ca25dabf7874036c1da49c4d81f1d9. compute_winner (None) -> ()
+[2022-07-17 20:12:38,580] INFO in blockchain: call contract Auction at 0xa1afb95f54ca25dabf7874036c1da49c4d81f1d9. queryResult (None) -> ((('0x4f6cba3a2730d467e00085567cfa90e0f6b69f1d',), ('bidder1', b'\xf2\x97\x1c\xc8c\xce\xd7\n,\x93\r\xec\xf7\xd4\x9c\x82 \xcd\xb9\xbe\x0c`\xd9\xc0>\xda\x14\xfb\r6lT'), (100,), False), 0)
+[2022-07-17 20:13:42,093] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-18 12:52:16,263] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-18 12:52:16,933] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-18 18:11:27,880] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-18 18:11:28,591] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-18 18:12:03,925] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-18 20:43:20,388] INFO in blockchain: deploy contract Auction at 0xb21642941be0fb156fb0fddcd562d3e4d8b7aab8
+[2022-07-18 20:43:21,015] INFO in blockchain: call contract Auction at 0xb21642941be0fb156fb0fddcd562d3e4d8b7aab8. create_auction (['item1', 1658148499, 1658148559]) -> ()
+[2022-07-18 20:46:01,734] INFO in blockchain: call contract Auction at 0xb21642941be0fb156fb0fddcd562d3e4d8b7aab8. commit ([['bidder0', '0x0737167891e73c85816d02ad941c83004c6bcd9ebff47f84b491d24b648d54c6']]) -> error
+[2022-07-19 19:04:21,284] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-19 19:04:22,036] INFO in app: starting server at 0.0.0.0:8080 (debug=True)
+[2022-07-19 19:15:19,629] INFO in app: starting server at 0.0.0.0:8080 (debug=True)

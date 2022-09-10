@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %} Auctions {% endblock %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/static/css/table.css"> 
+{% endblock %}
+{%block body%}
+<table border="1" class="pure-table">
+    <caption><h3>Auctions</h3></caption>
+    <th>id</th>
+    <th>item</th>
+    <th>state</th>
+    <th>link</th>
+    {% for auction in Auctions %}
+    <tr>
+        <td> {{auction.aid}} </td>
+        <td> {{auction.item}} </td>
+        <th> {{auction.state}} </td>
+        <td> <a href="/Auctions/{{auction.aid}}"> Details </a> </td>
+    </tr>
+    {%endfor%}
+{% endblock %}

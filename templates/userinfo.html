@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}User Info {% endblock %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/static/css/table.css"> 
+{% endblock %}
+{% block body %}
+    <h3> Username:  {{username}} </h3> 
+    <h3> Address:   {{address}} </h3>
+    <table border="1" class="pure-table">
+        <caption><h3>My_Auctions</h3></caption>
+        <th>id</th>
+        <th>item</th>
+        <th>state</th>
+        <th>relation</th>
+        <th>Detail</th>
+        {% for auction in Created_Auctions %}
+        <tr>
+            <td> {{auction.aid}} </td>
+            <td> {{auction.item}} </td>
+            <td> {{auction.state}} </td>
+            <td> Create </td>
+            <td> <a href="/Auctions/{{auction.aid}}"> Detail </a> </td>
+        </tr>
+        {%endfor%}
+        {% for auction in Win_Auctions %}
+        <tr>
+            <td> {{auction.aid}} </td>
+            <td> {{auction.item}} </td>
+            <td> {{auction.state}} </td>
+            <td> Win </td>
+            <td> <a href="/Auctions/{{auction.aid}}"> Detail </a> </td>
+        </tr>
+        {%endfor%}
+        {% for auction in Participate_Auctions %}
+        <tr>
+            <td> {{auction.aid}} </td>
+            <td> {{auction.item}} </td>
+            <td> {{auction.state}} </td>
+            <td> Participate </td>
+            <td> <a href="/Auctions/{{auction.aid}}"> Detail </a> </td>
+        </tr>
+        {%endfor%}
+<br>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block css %} 
+<link rel="stylesheet" type="text/css" href="/static/css/login.css"> 
+<style type="text/css">
+.text-input{
+    margin:0 0 10 0; 
+    outline-style: none ;
+    border: 1px solid #ccc; 
+    border-radius: 3px;
+    padding: 13px 14px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Microsoft soft";
+}
+
+input[type="radio"] {
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+
+p{
+    margin-left:50px;
+    margin-top:10px;
+}
+
+.button{
+    margin-top:10px;
+    width: 270px; /* 宽度 */
+	height: 40px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background: #1E90FF; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 17px; /* 字体大小 */
+
+}
+
+.form{
+    margin-top:20px;
+    margin-left:100px;
+}
+
+</style>
+{% endblock %}
+{% block title %}Create Auction {% endblock %}
+{% block body%}
+    <form action="/auction/create" method='POST' class="form">
+        <input type="text" name="item" placeholder="拍卖物" id="item"class = "text-input" required> <br>
+        <input type="text" name="commit_time" placeholder="持续时间" class= "text-input" id="commit_time"> <br>
+        <p><input type="radio" name="uint" value="min" id='min' checked="checked">
+            <label for="min">minutes</label></p>
+        <p><input type="radio" name="uint" value="hou" id='hou'> 
+            <label for="hou">hours</label></p>
+        <p><input type="radio" name="uint" value="day" id='day'> 
+            <label for="day">days</label></p>
+        <input type="submit" value="Submit" id='submit' class='button'>
+    </form>    
+{% endblock %}
+
